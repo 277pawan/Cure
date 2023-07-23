@@ -26,20 +26,20 @@
 .registerbox1 {
     margin: 40px 0px 100px 0px;
   background-color: #fff;
-  height: 560px;
+  height: 545px;
   width: 600px;
 }
 
 .registerbox2 {
     margin: 40px 40px 100px 0px;
   background-color: #edffed;
-  height: 560px;
+  height: 545px;
   width: 600px;
 }
 
 .registerimage {
   width:600px;
-  height: 560px;
+  height: 545px;
   object-fit: cover;
 }
  .registerimage:hover {

@@ -1,6 +1,6 @@
 .logincontainer{
     margin-top: 92px;
-    height: 700px;
+    height: 680px;
     width: 100%;
     background-color: green;
     display: flex;
@@ -10,18 +10,18 @@
     flex-wrap: wrap;
 }
 .loginbox1{
-    height: 570px;
+    height: 560px;
     width: 550px;
     background-color: rgb(225, 73, 199);
 
 }
 .loginimage
 {
-    height: 570px;
+    height: 560px;
     width: 550px;
 }
 .loginbox2{
-    height: 570px;
+    height: 560px;
     width: 550px;
     background-color: #edffed;
     padding: 30px;
