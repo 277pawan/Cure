@@ -10,18 +10,18 @@
     flex-wrap: wrap;
 }
 .loginbox1{
-    height: 600px;
+    height: 580px;
     width: 550px;
     background-color: rgb(225, 73, 199);
 
 }
 .loginimage
 {
-    height: 600px;
+    height: 580px;
     width: 550px;
 }
 .loginbox2{
-    height: 600px;
+    height: 580px;
     width: 550px;
     background-color: #edffed;
     padding: 30px;
