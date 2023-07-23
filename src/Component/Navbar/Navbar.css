@@ -1,0 +1,187 @@
+/* Common styles for both mobile and desktop */
+.navbarcontainer {
+  background-color: #eaffdf;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.windowul {
+  width: 100%;
+  overflow: auto;
+}
+
+.cure {
+  margin-top: -5px;
+  text-indent: 0px;
+  float: left;
+  padding: 10px;
+  color: #076b4c;
+  font-family: fantasy;
+  font-size: 45px;
+}
+
+.windowli {
+  list-style: none;
+  float: right;
+  text-indent: 15px;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: vesper libre;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes borderanimation {
+  from {
+    border-bottom: 3px solid rgb(173, 244, 173);
+    opacity: 0.7;
+  }
+  to {
+    border-bottom: 3px solid green;
+    opacity: 1;
+  }
+}
+
+.windowli:hover {
+  animation: borderanimation 1s ease-in-out 0s infinite alternate;
+}
+
+.verstaile {
+  text-indent: 0px;
+  padding: 0px;
+  border-radius: 22px;
+  height: 45px;
+  width: 45px;
+  margin-top: -10%;
+}
+
+.verstaileli {
+  list-style: none;
+  float: right;
+  text-indent: 50px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: vesper libre;
+}
+
+.mobileli {
+  display: none;
+}
+
+.mobileul {
+  display: none;
+}
+
+.hamsopen {
+  height: 30px;
+  width: auto;
+}
+@media screen and (max-width:768px) {
+  .navbarcontainer {
+    background-color: #eaffdf;
+    height: 60px;
+  }
+
+  .windowul {
+    display: none;
+  }
+
+  .mobileul {
+    display: block;
+    position: sticky;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:  #e0ffcf;
+    z-index: 100;
+  }
+
+  .windowli {
+    display: none;
+  }
+
+  .mobileli {
+    display: block;
+    list-style: none;
+    float: right;
+    text-indent: 50px;
+    padding: 0px;
+    font-size: 20px;
+    font-family: vesper libre;
+  }
+
+  .hamsopen {
+    position: relative;
+    top: 13px;
+    left: -3px;
+    height: 30px;
+    width: auto;
+    float: right;
+  }
+
+  .cure {
+    margin-top: -3px;
+    text-indent: 0px;
+    float: left;
+    padding: 5px;
+    color: #076b4c;
+    font-family: fantasy;
+    font-size: 45px;
+  }
+
+  .verstaile {
+    display: block;
+    position: relative;
+    top: -7px;
+    left: 10px;
+    border-radius: 20px;
+    height: 40px;
+    width: auto;
+  }
+
+  #hamsburgbox {
+    background-color:  #e0ffcf;
+    position: absolute;
+    left: -620%;
+    top: 100%;
+    width: 720%;
+    height: 100vh;
+    text-align: center;
+    opacity: 1.8;
+    animation: hamburg 0.5s ease-in-out;
+    z-index: 100;
+  }
+
+  @keyframes hamburg {
+    from {
+      transform: scaleX(0%);
+    }
+    to {
+      transform: scaleY(100%);
+    }
+  }
+
+  .hamsburgli {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: vesper libre;
+    font-weight: 700;
+    list-style-type: none;
+    background-color:  #e0ffcf;
+    display: flex;
+    opacity: 1;
+    margin-left: 87%;
+    flex-direction: row;
+    padding: 0px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+} 
+  

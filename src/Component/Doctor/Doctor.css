@@ -1,0 +1,305 @@
+.doctorcontainer {
+    margin-top: 80px;
+    height: 700px;
+    width: auto;
+    background-color: #eaffdf;
+  }
+  
+  .Doctorimage {
+    height: 700px;
+    width: 50%;
+    float: right;
+    background-color: #e0ffcf;
+  }
+  
+  .doctorheading {
+    position: absolute;
+    font-size: 100px;
+    font-family: lobster;
+    top: 20%;
+    left: 5%;
+  }
+  
+  .doctordiv {
+    font-size: 30px;
+  }
+  
+  .whycurecontainer {
+    height: auto;
+    width: 100%;
+    background-color: #80cb71;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    margin-bottom: 12px;
+  }
+  
+  .whybox1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color:#e0ffcf;
+    height: auto;
+    width: 800px;
+    
+  }
+  
+  .whybox1heading {
+    font-size: 70px;
+    font-family: vesper libre;
+    text-align: center;
+  }
+  
+  .whybox1desc {
+    font-size: 28px;
+    font-family: domine;
+    padding: 20px;
+  }
+  
+  .whycureflex {
+    height: 220px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e0ffcf;
+    margin-bottom: 2px;
+  }
+  
+  .curebox1,
+  .curebox2,
+  .curebox3 {
+    margin: 30px 7px 1px 7px;
+    font-size: 30px;
+    font-family: lobster;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    text-align: center;
+    background-color: rgb(162, 237, 160);
+    cursor: pointer;
+    box-shadow: -7px 7px 14px #5c926f, 7px -7px 14px #dcffff;
+  }
+  .whybox2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:#e0ffcf;
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow:0px 0px 10px 10px  #629a58 ;
+  }
+  
+  .whybook {
+    font-size: 30px;
+    font-family: lobster;
+    text-align: center;
+  }
+  
+  .whyname,
+  .whynumber,
+  .whytime,
+  .whyemail {
+    height: 50px;
+    width: 400px;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 9%;
+    border-radius: 6px;
+  }
+  
+  .whycheckbox {
+    height: 18px;
+    width: 20px;
+    margin-top: 3%;
+    margin-left: 9%;
+  }
+  
+  .whysubmit {
+    background-color: #206035;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: domine;
+    width: 200px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30%;
+    margin-top: 15px;
+  }
+  
+  .whysubmit:hover {
+    background-color: #093819;
+    color: #ffffff;
+    width: 200px;
+    font-size: 25px;
+    font-family: domine;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30%;
+    margin-top: 15px;
+  }
+  .doctortrustcontainer{
+    height: auto;
+    width: auto;
+    background-color: #e0ffcf;
+    color:rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  /* justify-content: center;   */
+    align-items: center;
+  }
+  .trustbox1{
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: lobster;
+  }
+  .trustbox2{
+    padding: 20px;
+width: 1200px;
+    font-size: 30px;
+    /* font-family: "bree serif"; */
+  }
+  .trustbutton{
+    background-color: #206035;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: domine;
+    height: 70px;
+    width: 300px;
+    border: none;
+    padding: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .trustbutton:hover {
+    background-color: #093819;
+    color: #ffffff;
+    height: 70px;
+    width: 300px;
+    font-size: 25px;
+    font-family: domine;
+    border: none;
+    padding: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  /* Media query for devices with screen width up to 768px */
+  @media screen and (max-width: 768px) {
+    .doctorcontainer {
+      margin-top: 60px;
+      height: 500px;
+      width: auto;
+      background-color: #e0ffcf;
+    }
+  
+    .Doctorimage {
+      display: none;
+    }
+  
+    .doctorheading {
+      font-size: 60px;
+      top: 15%;
+      left: 0%;
+      padding: 2px;
+    }
+  
+    .doctordiv {
+      font-size: 30px;
+      padding: 2px;
+    }
+  
+    .whycurecontainer {
+      height: 1500px;
+      margin-bottom: 0px;
+    }
+  
+    .whybox1 {
+        margin-top: 0px;
+      height: 850px;
+      width: 100%;
+    }
+  
+    .whycureflex {
+      height: 370px;
+      justify-content: center;
+    }
+  
+    .whybox2 {
+      margin-top: -120px;
+      width: 100%;
+      box-shadow: none;
+    }
+  
+    .whyname,
+    .whynumber,
+    .whytime,
+    .whyemail {
+      width: 90%;
+      margin-left: 5%;
+    }
+    .whysubmit {
+        background-color: #206035;
+        color: #ffffff;
+        font-size: 25px;
+        font-family: domine;
+        width: 200px;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 25%;
+        margin-top: 15px;
+      }
+      
+      .whysubmit:hover {
+        background-color: #093819;
+        color: #ffffff;
+        width: 200px;
+        font-size: 25px;
+        font-family: domine;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 25%;
+        margin-top: 15px;
+      }
+      .trustbox1{
+        margin-top: 20px;
+        font-size: 50px;
+        font-family: lobster;
+        text-align: center;
+      }
+      .trustbox2{
+        padding: 10px;
+        text-align: center;
+        /* width: 100px; */
+        width: auto;
+        font-size: 30px;
+        /* font-family: "bree serif"; */
+      }
+    
+  }
+  @media screen and (max-width:360px) {
+    
+    .whybox2 {
+        margin-top: 20px;
+        width: 100%;
+      }
+    
+  }

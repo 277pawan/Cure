@@ -1,0 +1,31 @@
+.pharmacontainer{
+    margin-top:80px ;
+    height: auto;
+    width: auto;
+    background-color:  #eaffdf;
+}
+.pharmaimage{
+    margin:15px 15px 15px 35px;
+    height: 700px;
+    width: 95%;
+}
+.pharmatext
+{
+    font-family: lobster;
+    font-size: 50px;
+    text-align: center;
+    background-color: #e0ffcf;
+}
+@media screen and (max-width:768px) {
+    .pharmacontainer{
+        margin-top:60px ;
+        height: auto;
+        width: auto;
+        background-color:  #eaffdf;
+    }   .pharmaimage{
+        margin:0px 0px 0px 0px;
+        height: 450px;
+        width: 100%;
+    }   
+    
+}

@@ -1,0 +1,124 @@
+.cannabiscontainer{
+    height: auto;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    box-sizing: border-box;
+
+    margin-bottom: 10px;
+}
+  .image10{
+        height: 550px;
+        width: 350px;
+    }
+    .image11{
+        height: 550px;
+        width: 350px;
+    }
+.cannbox1
+{
+    margin-top: 30px;
+    height: 550px;
+    width: 350px;
+    background-color: antiquewhite;
+}
+.cannbox2
+{
+    margin-top: 30px;
+    height: 550px;
+    width: 350px;
+    background-color: rgb(255, 145, 0);
+}.cannbox3
+{
+    margin-top: 30px;
+    height: 550px;
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+}
+.cannheading{
+    font-family: "lobster";
+    font-size: 60px;
+    padding: 20px;
+}
+.canndescription{
+font-size: 20px;
+font-family: "domine";
+padding-left: 20px;
+padding-bottom:20px;
+}
+.cannbutton{
+    height: 60px;
+    width: 200px;
+    font-size: 25px;
+    font-family: domine;
+    margin-left: 3%;
+    /* border-radius: 30px; */
+    border: 2px solid rgb(11, 135, 0);
+    background-color:#206035;
+    color:rgb(255, 255, 255);
+cursor: pointer;
+    z-index: 10;
+
+    }
+    .cannbutton:hover{
+        background-color: rgb(4, 37, 4);
+        color:rgb(255, 255, 255);
+        z-index: 10;
+    }
+
+@media screen and (max-width:768px) {
+    .cannabiscontainer{
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: rgb(174, 183, 172);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        margin-bottom: 10px;
+    }
+    .cannbox1
+    {
+        margin-top: 30px;
+        height: 300px;
+        width: 150px;
+        background-color: antiquewhite;
+    }
+    .cannbox2
+    {
+        margin-top: 30px;
+        height: 300px;
+        width: 150px;
+        background-color: rgb(255, 145, 0);
+    }.cannbox3
+    {
+        margin-top: 30px;
+        height: 550px;
+        width: 700px;
+        background-color: rgb(255, 255, 255);
+    }
+    .cannheading{
+        font-family: "fantasy";
+        font-size: 60px;
+        padding: 20px;
+    }
+    .canndescription{
+    font-size: 20px;
+    font-family: "domine";
+    padding-left: 20px;
+    padding-bottom:20px;
+    }
+    .image10{
+        height: 300px;
+        width: 150px;
+    }
+    .image11{
+        height: 300px;
+        width: 150px;
+    }
+       
+}

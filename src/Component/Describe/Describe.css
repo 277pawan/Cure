@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lilita+One&family=Lora:ital@1&family=Orbitron:wght@400;700&family=PT+Serif&family=Poppins:wght@100&display=swap');
+.describecontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #e0ffcf;
+  }
+  
+  .box1,
+  .box2,
+  .box3 {
+    flex: 1;
+    background-color: #84af78;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+  }
+  
+  .boxheading {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .boxdescript {
+    font-size: 26px;
+    font-family: domine;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .boxbutton {
+    background-color: #206035;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: domine;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 35%;
+    margin-top: 15px;
+}
+    
+.boxbutton:hover {
+    background-color: #093819;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: domine;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 35%;
+    margin-top: 15px;
+}
+  .in-view{
+    animation: intersect 1s ease-in-out;
+  }
+  @keyframes intersect {
+    from{
+      transform: translateY(30%);
+      opacity: 0;
+    }
+    to{
+      transform: translateY(0%);
+      opacity: 1;
+    }
+    
+  }
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .describecontainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box1,
+    .box2,
+    .box3 {
+      width: 90%;
+      margin: 10px 0;
+    }
+    .boxbutton {
+      background-color: #206035;
+      color: #ffffff;
+      font-size: 20px;
+      font-family: domine;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 24%;
+      margin-top: 15px;
+  }
+      
+  .boxbutton:hover {
+      background-color: #093819;
+      color: #ffffff;
+      font-size: 20px;
+      font-family: domine;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 24%;
+      margin-top: 15px;
+  }
+  }
+  

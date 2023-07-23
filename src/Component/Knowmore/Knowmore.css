@@ -1,0 +1,298 @@
+.knowmorecontainer{
+    margin-top: 90px;
+    background-color: #edffed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    height: auto;
+
+}
+.knowmoreheading{
+    font-size: 60px;
+    font-family: itim;
+    border-bottom: 2px solid white;
+border-bottom: 2px dashed white;
+}
+.knowmoredescryption
+{
+    font-size: 28px;
+    font-family: lora;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+}
+.knowbox1
+{
+    height: auto;
+    width: 400px;
+    background-color:#edffed;
+}
+.knowbox2
+{
+    height: auto;
+    width: 400px;
+    background-color: #edffed;
+}
+.knowbox3
+{
+    height: auto;
+    width: 400px;
+    background-color: #edffed;
+}
+.knowbox4
+{
+    height: auto;
+    width: 400px;
+    background-color: #edffed;
+}
+.mint {
+    margin-left: 25%;
+    height: 222px;
+    width: 222px;
+    border-radius: 150px;
+    overflow: hidden; 
+    cursor: pointer;
+    transition: transform 0.2s; 
+    padding: 20px;
+  }
+ 
+  .mint:hover{
+    transform: scale(1.2); 
+  }
+  
+.aswagandha
+{
+    margin-left: 25%;
+    height: 222px;
+    width: 222px;
+    border-radius: 150px;
+    overflow: hidden; 
+    cursor: pointer;
+    transition: transform 0.2s; 
+    padding: 20px;
+}
+.aswagandha:hover{
+    transform: scale(1.2);
+}
+.gotukola{
+    margin-left: 25%;
+    height: 222px;
+    width: 222px;
+    border-radius: 150px;
+    overflow: hidden; 
+    cursor: pointer;
+    transition: transform 0.2s; 
+    padding: 20px;
+}
+.gotukola:hover{
+    transform: scale(1.2);
+}
+.nirgundhi{
+    margin-left: 25%;
+    height: 222px;
+    width: 222px;
+    border-radius: 150px;
+    overflow: hidden; 
+    cursor: pointer;
+    transition: transform 0.2s; 
+    padding: 20px;
+}
+.nirgundhi:hover{
+    transform: scale(1.2);
+}
+.iframecontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:#edffed;
+}
+.iframebox1{
+    background-color: #edffed;
+
+}
+.iframevideo{
+    margin: -80px 10px 10px 10px;
+    height: 600px;
+    width: 40vw;
+    position: relative;
+    top:0px;
+    left:0%
+}
+.iframebox2{
+    height: auto;
+    width: 950px;
+    background-color: #edffed;
+}
+.faqsmall{
+    height: 100px;
+    width: 100vw;
+    font-size: 40px;
+    font-family: satisfy;
+    text-align: center;
+}
+.faqlarge{
+    width: 100vw;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -30px;
+    font-family: visper libre;
+}
+summary{
+    padding: 10px;
+    height: 70px;
+    background-color: #d8fed8;
+    margin: 10px 10px 0px px;
+    width: 890px;
+    font-size: 40px;
+    font-family: lolita one;
+}
+details{
+    padding: 20px;
+    font-size: 20px;
+}
+@media screen and (max-width:768px) {
+    .knowmorecontainer{
+        margin-top: 60px;
+        background-color: #edffed;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+        height: auto;
+    
+    }
+    .knowmoreheading{
+        font-size: 35px;
+        font-family:"itim";
+        border-bottom: 2px solid white;
+    border-bottom: 2px dashed white;
+    text-align: center;
+    }
+    .knowmoredescryption
+    {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        font-family: volkron;
+        padding: 10px;
+    }
+    .mint {
+        margin-left: 17%;
+        height: 222px;
+        width: 222px;
+        border-radius: 150px;
+        overflow: hidden; 
+        cursor: pointer;
+        transition: transform 0.2s; 
+        padding: 20px;
+      }
+     
+      .mint:hover{
+        transform: scale(1.2); 
+      }
+      
+    .aswagandha
+    {
+        margin-left: 17%;
+        height: 222px;
+        width: 222px;
+        border-radius: 150px;
+        overflow: hidden; 
+        cursor: pointer;
+        transition: transform 0.2s; 
+        padding: 20px;
+    }
+    .aswagandha:hover{
+        transform: scale(1.2);
+    }
+    .gotukola{
+        margin-left: 17%;
+        height: 222px;
+        width: 222px;
+        border-radius: 150px;
+        overflow: hidden; 
+        cursor: pointer;
+        transition: transform 0.2s; 
+        padding: 20px;
+    }
+    .gotukola:hover{
+        transform: scale(1.2);
+    }
+    .nirgundhi{
+        margin-left: 17%;
+        height: 222px;
+        width: 222px;
+        border-radius: 150px;
+        overflow: hidden; 
+        cursor: pointer;
+        transition: transform 0.2s; 
+        padding: 20px;
+    }
+    .nirgundhi:hover{
+        transform: scale(1.2);
+    }
+    .iframecontainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color:#edffed;
+    }
+    .iframebox1{
+        background-color: #edffed;
+    
+    }
+    .iframevideo{
+        margin: -80px 10px 10px 10px;
+        height: 400px;
+        width: 390px;
+        position: relative;
+        top:0px;
+        left:0%
+    }
+    .iframebox2{
+        height: auto;
+        width: 100vw;
+        background-color: #edffed;
+    }
+    .faqsmall{
+        height: 100px;
+        width: 100vw;
+        font-size: 40px;
+        font-family: satisfy;
+        text-align: center;
+    }
+    .faqlarge{
+        width: 100vw;
+        text-align: center;
+        font-size: 50px;
+        font-family: visper libre;
+    }
+    summary{
+        padding: 20px;
+        height: 60px;
+        background-color: #d8fed8;
+        margin: 0px 10px 0px 0px;
+        width: 93vw;
+        font-size: 20px;
+        font-family: lolita one;
+    }
+    details{
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width:360px) {
+    .iframevideo{
+        margin: -80px 10px 10px 10px;
+        height: 400px;
+        width: 340px;
+        position: relative;
+        top:0px;
+        left:0%
+    }
+
+}

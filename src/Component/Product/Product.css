@@ -1,0 +1,91 @@
+/* Product.css */
+.productcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .pbox1 {
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .image1 {
+    width: 350px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .imagetext {
+    font-size: 58px;
+    font-family: Lobster;
+    color: black;
+  }
+  
+  .productbutton {
+    background-color: #206035;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: domine;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  .productbutton:hover {
+    background-color:rgb(8, 66, 8);
+    color: #ffffff;
+    font-size: 20px;
+    font-family: domine;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .pbox2container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .pbox4,
+  .pbox5,
+  .pbox6 {
+    flex: 1;
+    background-color: #e0ffcf;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    box-shadow: inset 0px 5px 5px green;
+}
+  .pbox4 .image2,
+  .pbox5 .image3,
+  .pbox6 .image4 {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 100px;
+    border:2px solid green;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .pbox2container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pbox4,
+    .pbox5,
+    .pbox6 {
+      width: 90%;
+      margin: 10px 0;
+    }
+  }
+  

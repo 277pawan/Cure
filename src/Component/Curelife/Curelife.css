@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Itim&family=Lora:ital@1&family=Satisfy&family=Vollkorn&display=swap');
+.curelifecontainer
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: url("../../Assets/image20.png");
+    background-color: #edffed;
+    height: 700px;
+    width: auto;
+}
+.curelifebox1
+{
+    height: 600px;
+    width: 700px;
+    background-color:none;
+}
+.curelifeheading{
+    text-align: center;
+    padding-left:10px ;
+    font-size: 50px;
+    font-family: 'Courgette', cursive;
+}
+.curelifedescryption
+{
+  text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-family: lora;
+}
+.curelifeamaze{
+  text-align: center;
+    padding: 20px;
+    font-size: 28px;
+    font-family:  volkron;
+}
+.curelifebutton
+{
+
+   background-color: #206035;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: domine;
+    width: 200px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 35%;
+    margin-top: 15px;
+  }
+  
+  .curelifebutton:hover {
+    background-color: #093819;
+    color: #ffffff;
+    width: 200px;
+    font-size: 25px;
+    font-family: domine;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 35%;
+    margin-top: 15px;
+  }
+  .spancure
+  {
+    font-size: 50px;
+    font-family: fantasy;
+    margin-left: 0%;
+  }
+@media screen and (max-width:768px) {
+    .curelifecontainer
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: url("../../Assets/image20.png");
+    background-color: #edffed;
+    height: 900px;
+    width: auto;
+}
+    .curelifebox1
+{
+    height: 700px;
+    width: 700px;
+    background-color: none;
+}  
+.spancure
+{
+  font-size: 50px;
+  font-family: fantasy;
+  margin-left: 0%;
+}
+.curelifeheading{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'courgette', cursive;
+}
+.curelifebutton
+{
+
+   background-color: #206035;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: domine;
+    width: 200px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 22%;
+    margin-top: 15px;
+  }
+  
+  .curelifebutton:hover {
+    background-color: #093819;
+    color: #ffffff;
+    width: 200px;
+    font-size: 25px;
+    font-family: domine;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 22%;
+    margin-top: 15px;
+  }
+}
