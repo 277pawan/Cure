@@ -15,6 +15,7 @@ import Newsletter from './Component/Newsletter/Newsletter';
 import News from './Component/News/News';
 import Knowmore from './Component/Knowmore/Knowmore';
 import Register from './Component/Register/Register';
+import Login from './Component/Login/Login';
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
           <Route path='/News' element={<News />}></Route>
           <Route path='/Knowmore' element={<Knowmore />}></Route>
           <Route path='/Register' element={<Register />}></Route>
+          <Route path='/Login' element={<Login />}></Route>
+
 
 
 

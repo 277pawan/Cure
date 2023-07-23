@@ -1,0 +1,156 @@
+.logincontainer{
+    margin-top: 92px;
+    height: 740px;
+    width: 100%;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.loginbox1{
+    height: 600px;
+    width: 550px;
+    background-color: rgb(225, 73, 199);
+
+}
+.loginimage
+{
+    height: 600px;
+    width: 550px;
+}
+.loginbox2{
+    height: 600px;
+    width: 550px;
+    background-color: #edffed;
+    padding: 30px;
+}
+.loginemail,
+.loginpassword
+{
+  width: 500px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Visper Libre", sans-serif;
+  text-align: center;
+  background-color: aliceblue;
+  transition: border-color 0.3s ease;
+}
+
+.loginemail:focus,
+.loginpassword:focus{
+outline: none;
+  border-color: #007bff;
+}
+.login{
+    cursor: pointer;
+    margin-top: 10px;
+    height: 60px;
+    width: 100%;
+    background-color:#2f9120;
+    font-size: 20px;
+    font-family: roboto slab;
+    color: white;
+}
+.login:hover{
+    background-color: green;
+}
+.orline
+{
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+    display: block;
+    margin-top: 40px;
+    width: 500px;
+}
+.googlelogin{
+    cursor: pointer;
+    margin-top: 20px;
+    height: 60px;
+    width: 100%;
+    font-size: 30px;
+    font-family: roboto slab;
+    text-align: center;
+    background-color: #2f9120;
+    color: white;
+}
+.googlelogin:hover{
+    background-color: green;
+}
+@media screen and (max-width:768px) {
+    .logincontainer{
+        margin-top: 62px;
+        height: auto;
+        width: 100%;
+        background-color: green;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .loginbox1{
+        display: none;
+    }
+    .loginbox2{
+        margin: 40px 0px 40px 0px;
+        height: 600px;
+        width: 95%;
+        background-color: #edffed;
+        padding: 30px;
+    }
+    .loginemail,
+    .loginpassword
+    {
+      width: 330px;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      font-size: 18px;
+      font-family: "Visper Libre", sans-serif;
+      text-align: center;
+      background-color: aliceblue;
+      transition: border-color 0.3s ease;
+    }
+    
+    .loginemail:focus,
+    .loginpassword:focus{
+    outline: none;
+      border-color: #007bff;
+    }
+    .login{
+        cursor: pointer;
+        margin-top: 10px;
+        height: 60px;
+        width: 330px;
+        background-color:#2f9120;
+        font-size: 20px;
+        font-family: roboto slab;
+        color: white;
+    }
+    .orline
+    {
+        background-color: rgb(0, 0, 0);
+        height: 2px;
+        display: block;
+        margin-top: 40px;
+        width: 340px;
+    }
+    .googlelogin{
+        cursor: pointer;
+        margin-top: 20px;
+        height: 60px;
+        width: 330px;
+        font-size: 25px;
+        font-family: roboto slab;
+        text-align: center;
+        background-color: #2f9120;
+        color: white;
+    }
+    
+}
