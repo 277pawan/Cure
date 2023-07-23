@@ -1,6 +1,6 @@
 .logincontainer{
     margin-top: 92px;
-    height: 680px;
+    height: 670px;
     width: 100%;
     background-color: green;
     display: flex;
@@ -154,3 +154,8 @@ outline: none;
     }
     
 }
+@media screen and (max-width:1300px) {
+    .loginbox1{
+        display: none;
+    }    
+    }
