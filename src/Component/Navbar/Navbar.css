@@ -36,7 +36,43 @@
   position: relative;
   overflow: hidden;
 }
+#profileBox {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #edffed;
+  padding: 10px 20px 10px 0px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 999;
+  width: 350px;
+}
 
+.profileInfo {
+  text-align: center;
+
+}
+
+.profileActions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.profileActions button {
+  margin: 1px 0px 5px 0px;
+  padding: 6px 0px;
+  border: none;
+  font-size: 20px;
+  font-family: volkron;
+  background-color: green;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.navbarlogin{
+  width: 300px;
+}
 @keyframes borderanimation {
   from {
     border-bottom: 3px solid rgb(173, 244, 173);
@@ -182,6 +218,44 @@
     padding: 0px;
     justify-content: center;
     margin-top: 40px;
+  }
+  #profileBox {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: #edffed;
+    padding: 10px 32px 10px 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 999;
+    width: 250px;
+  }
+  .navbarlogin{
+    width: 200px;
+  }
+  
+  
+  .profileInfo {
+    text-align: center;
+  
+  }
+  
+  .profileActions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .profileActions button {
+    margin: 1px 0px 5px 0px;
+    padding: 6px 0px;
+    border: none;
+    font-size: 20px;
+    font-family: volkron;
+    background-color: green;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
   }
 } 
   

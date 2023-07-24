@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   height: 500px;
   box-sizing: border-box;
-  background-color: darkgreen;
+  background-color: rgb(3, 43, 3);
   padding: 20px; /* Add some padding to create space between elements */
 }
 

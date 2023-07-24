@@ -81,7 +81,7 @@
     text-align: center;
     background-color: rgb(162, 237, 160);
     cursor: pointer;
-    box-shadow: -7px 7px 14px #5c926f, 7px -7px 14px #dcffff;
+    box-shadow: inset 5px 0px 5px #27700c, 0px 0px 0px #22650a;
   }
   .whybox2 {
     margin-top: 20px;
