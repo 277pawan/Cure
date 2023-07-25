@@ -4,11 +4,15 @@ import verstaile from "../../Assets/verstaileimage.png";
 import hamsopen from "../../Assets/Hamburg.png";
 import hamsclose from "../../Assets/hamburgclose.png";
 import { Link } from "react-router-dom";
-
+import Usestore from "../Usestore";
 function Navbar() {
   const [hamimagevisible, sethamimagevisible] = useState(true);
   const [profileBoxVisible, setProfileBoxVisible] = useState(false);
-
+  const userEmail = Usestore((state) => state.email);
+  const userName = Usestore((state) => state.name);
+  const userImage = Usestore((state) => state.image);
+  const logoutfunction = Usestore((state) => state.logout);
+  const uid = Usestore((state) => state.uid);
   function hamburghandle() {
     sethamimagevisible(!hamimagevisible);
   }
@@ -44,19 +48,33 @@ function Navbar() {
         <li className="verstaileli">
           <img
             className="verstaile"
-            src={verstaile}
+            src={userImage ? userImage : verstaile}
             alt="verstaileimage"
             onClick={handleVerstaileImageClick}
           ></img>
           {profileBoxVisible && (
             <div id="profileBox">
               <div className="profileInfo">
-                <p style={{ fontSize: "20px" }}>John Doe</p>
-                <p style={{ fontSize: "20px" }}> john.doe@example.com</p>
+                <p style={{ fontSize: "20px" }}>
+                  {userName ? userName : "John Doe"}
+                </p>
+                <p style={{ fontSize: "20px" }}>
+                  {" "}
+                  {userEmail ? userEmail : "JohnDoe@277gmail.com"}
+                </p>
+              </div>
+              <div className="profileActions">
+                <Link to="/Profile">
+                  <button onClick={handleprofilebox} className="navbarlogin">
+                    UserProfile
+                  </button>
+                </Link>
               </div>
               <div className="profileActions">
                 <Link to="/Login">
-                  <button className="navbarlogin">Login</button>
+                  <button onClick={handleprofilebox} className="navbarlogin">
+                    {userName ? "Logout" : "Login"}
+                  </button>
                 </Link>
               </div>
             </div>
@@ -72,21 +90,31 @@ function Navbar() {
         <li className="verstaileli">
           <img
             className="verstaile"
-            src={verstaile}
+            src={userImage ? userImage : verstaile}
             alt="verstaileimage"
             onClick={handleVerstaileImageClick}
           ></img>
           {profileBoxVisible && (
             <div id="profileBox">
               <div className="profileInfo">
-                <p style={{ fontSize: "20px" }}> John Doe</p>
-                <p style={{ fontSize: "20px" }}>john.doe@example.com</p>
+                <p style={{ fontSize: "20px" }}>
+                  {userName ? userName : "John Doe"}
+                </p>
+                <p style={{ fontSize: "20px" }}>
+                  {userEmail ? userEmail : "JohnDoe@277gmail.com"}
+                </p>
+              </div>
+              <div className="profileActions">
+                <Link to="/Profile">
+                  <button onClick={handleprofilebox} className="navbarlogin">
+                    UserProfile
+                  </button>
+                </Link>
               </div>
               <div className="profileActions">
                 <Link to="/Login">
-                  {" "}
-                  <button onClick={handleprofilebox} className="navbarlogin">
-                    Login
+                  <button onClick={logoutfunction} className="navbarlogin">
+                    {userName ? "Logout" : "Login"}
                   </button>
                 </Link>
               </div>

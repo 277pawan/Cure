@@ -16,6 +16,7 @@ import News from './Component/News/News';
 import Knowmore from './Component/Knowmore/Knowmore';
 import Register from './Component/Register/Register';
 import Login from './Component/Login/Login';
+import Profile from './Component/Profile/Profile';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path='/Knowmore' element={<Knowmore />}></Route>
           <Route path='/Register' element={<Register />}></Route>
           <Route path='/Login' element={<Login />}></Route>
+          <Route path='/Profile' element={<Profile />}></Route>
 
 
 

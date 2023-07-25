@@ -3,26 +3,37 @@ import "./Login.css";
 import loginimage from "../../Assets/loginimage.png";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { auth, provider } from "../../Firestore";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import {
+  signInWithEmailAndPassword,
+  signInWithPopup,
+  signOut,
+} from "firebase/auth";
+import useUserStore from "../Usestore";
 function Login() {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   const [err, seterr] = useState("");
   const [messageerr, setmessageerr] = useState("");
   const Navigate = useNavigate("");
+  const setuseremail = useUserStore((state) => state.setzEmail);
+  const setusername = useUserStore((state) => state.setzName);
+  const setuserimage = useUserStore((state) => state.setzImage);
+  const setlogout = useUserStore((state) => state.setzlogout);
+  const setuid = useUserStore((state) => state.setzuid);
+
   function handlelogin(e) {
     e.preventDefault();
     if (email || password) {
       signInWithEmailAndPassword(auth, email, password)
         .then((resp) => {
+          const user = resp.user;
+          setuseremail(user.email);
+          setusername(user.displayName);
+          setuid(user.uid);
           Navigate("/");
         })
         .catch((err) => {
           console.log(err);
-          // seterr(err);
-          // setTimeout(() => {
-          //   seterr("");
-          // }, 3000);
         });
     } else {
       setmessageerr("Fill all the fields.");
@@ -31,6 +42,30 @@ function Login() {
       }, 3000);
     }
   }
+  function googlehandle() {
+    signInWithPopup(auth, provider)
+      .then((data) => {
+        setusername(data.user.displayName);
+        setuseremail(data.user.email);
+        setuserimage(data.user.photoURL);
+
+        Navigate("/");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+  function logout() {
+    signOut(auth)
+      .then(() => {
+        setusername("");
+        setuserimage("");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+  setlogout(logout);
   return (
     <div className="logincontainer">
       <div className="loginbox1">
@@ -64,7 +99,7 @@ function Login() {
           <div>
             <span className="orline"></span>
           </div>
-          <button className="googlelogin">
+          <button onClick={googlehandle} className="googlelogin">
             <span
               style={{
                 fontSize: "35px",

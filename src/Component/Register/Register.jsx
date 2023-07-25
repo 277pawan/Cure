@@ -4,7 +4,7 @@ import { auth } from "../../Firestore";
 import "./Register.css";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-
+import useUserStore from "../Usestore";
 function Register() {
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
@@ -15,7 +15,6 @@ function Register() {
   const [sucess, setsucess] = useState("");
   const [err, seterr] = useState("");
   const Navigate = useNavigate("");
-
   useEffect(() => {
     if (otp !== "") {
       localStorage.setItem("otp", otp);
@@ -28,12 +27,14 @@ function Register() {
         createUserWithEmailAndPassword(auth, email, Password)
           .then((res) => {
             const resp = res.user;
-            updateProfile({
+            updateProfile(resp, {
               displayName: name,
             });
+            console.log(resp);
+
             setsucess("Successfully your account is created");
             setTimeout(() => {
-              Navigate("/");
+              Navigate("/Login");
             }, 3000);
           })
           .catch((err) => {
@@ -48,30 +49,28 @@ function Register() {
       alert("check your otp.");
     }
   }
-  function generateotp() {
+  async function generateotp() {
     setotpmessage("Please check your Email for OTP");
     const generatedOtp = Math.floor(Math.random() * 9000 + 1000);
     setotp(generatedOtp.toString());
-    let data = {
-      email: email,
-      otp: otp,
-    };
-    fetch("http://localhost:3000/", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data); // Log the data received from the server
-      })
-      .catch((error) => {
-        console.log("Error occurred: " + error);
+    try {
+      const data = {
+        email: email,
+        otp: generatedOtp.toString(), // Use the generated OTP, not the previous one
+      };
+      const response = await fetch("http://localhost:3000/", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(data),
       });
+      const responsedata = await response.json();
+      console.log(responsedata);
+    } catch (err) {
+      console.log(err);
+    }
+
     setTimeout(() => {
       localStorage.removeItem("otp");
     }, 120000);
@@ -79,7 +78,14 @@ function Register() {
       setotpmessage("");
     }, 3000);
   }
-
+  useEffect(() => {
+    setTimeout(() => {
+      localStorage.removeItem("otp");
+    }, 120000);
+    setTimeout(() => {
+      setotpmessage("");
+    }, 3000);
+  }, [otp]);
   return (
     <div className="registercontainer">
       <div className="registerbox1">
