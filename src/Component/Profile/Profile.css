@@ -101,7 +101,7 @@ top: -40px;
         margin-top: 0px;
         height: 100vh;
         width: 100vw;
-        background-image: linear-gradient(to top right, #e2e2e2, #bbc4f4);
+        background-image: linear-gradient(to top right,#eaffdf, #efefef);
       }
       
       .profile-container {
