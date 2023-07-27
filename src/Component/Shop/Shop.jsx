@@ -16,7 +16,6 @@ function Shop() {
           <hr className="hr2"></hr>
         </div>
         <div className="shopbox3">
-          {" "}
           We at Cure provide various services to the nature of the clients. Wish
           how you would like to spend the time here we can talk and come to a
           conclusion.
@@ -36,7 +35,6 @@ function Shop() {
               Mint
             </div>
             <div className="shopbutt">
-              {" "}
               <button className="shopbutton">20rs Buy Now</button>
             </div>
           </div>
