@@ -18,6 +18,7 @@ import Register from './Component/Register/Register';
 import Login from './Component/Login/Login';
 import Profile from './Component/Profile/Profile';
 import Shop from './Component/Shop/Shop';
+import Produce1 from './Component/Produce1/Produce1';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path='/Login' element={<Login />}></Route>
           <Route path='/Profile' element={<Profile />}></Route>
           <Route path='/Shop' element={<Shop />}></Route>
+          <Route path='/Produce' element={<Produce1 />}></Route>
 
 
 

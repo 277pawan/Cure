@@ -6,6 +6,7 @@ import pro3 from "../../Assets/Aswagandha1.png";
 import pro4 from "../../Assets/nirgundhi1.png";
 import mintleaf from "../../Assets/mintlogo.png";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 function Shop() {
   return (
     <>
@@ -35,7 +36,9 @@ function Shop() {
               Mint
             </div>
             <div className="shopbutt">
-              <button className="shopbutton">20rs Buy Now</button>
+              <Link to="/Produce1">
+                <button className="shopbutton">20rs Buy Now</button>
+              </Link>
             </div>
           </div>
           <div className="shop2">
