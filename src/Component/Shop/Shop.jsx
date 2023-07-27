@@ -23,7 +23,7 @@ function Shop() {
         <div className="shopbox4">
           <div className="shop1">
             <div>
-              <img style={{ height: "300px" }} src={pro1} alt="Mint"></img>
+              <img style={{ height: "200px" }} src={pro1} alt="Mint"></img>
             </div>
             <div
               style={{
