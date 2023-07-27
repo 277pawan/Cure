@@ -130,6 +130,7 @@ function Shop() {
             </div>
             <div
               style={{
+                height: "250px",
                 fontSize: "22px",
                 textAlign: "center",
                 marginBottom: "30px",
