@@ -17,6 +17,7 @@ import Knowmore from './Component/Knowmore/Knowmore';
 import Register from './Component/Register/Register';
 import Login from './Component/Login/Login';
 import Profile from './Component/Profile/Profile';
+import Shop from './Component/Shop/Shop';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path='/Register' element={<Register />}></Route>
           <Route path='/Login' element={<Login />}></Route>
           <Route path='/Profile' element={<Profile />}></Route>
+          <Route path='/Shop' element={<Shop />}></Route>
 
 
 

@@ -45,7 +45,7 @@ function Product() {
           cannabis.
         </div>
         <br></br>
-        <Link to="/Login">
+        <Link to="/Shop">
           {" "}
           <button className="productbutton">To The Shop</button>
         </Link>

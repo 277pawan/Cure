@@ -1,0 +1,212 @@
+.shopcontainer
+{
+    margin-top: 90px;
+    height: auto;
+    width: 100vw;
+    background-color: #edffed;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+.shopbox1{
+    background-color: #edffed;
+    height: 155px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-family: satisfy;
+    /* margin-top: -5%; */
+
+}
+.hr2{
+color:white;
+width:1245px;
+display:flex;
+margin-top:3px;
+border:1px solid black;
+}
+.shopbox2{
+    background-color:#edffed;
+    height: 40px;
+    width: auto;
+
+    /* margin-top: -18%; */
+}
+.shopbox3{
+    background-color: #edffed;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-family: robto slab;
+    /* margin-top: -35%; */
+}
+.shopbox4{
+    background-color: #edffed;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* margin-top: -25%; */
+    margin: 40px 0px 40px 0px;
+    align-items: center;
+}
+.shop1,
+.shop2,
+.shop3,
+.shop4{
+    height: 440px;
+    width: 390px;
+    background-color: #d0fbd0;
+    transition: 0.4s ease-in-out;
+}
+.shop1:hover{
+    transform: scale(1.1);
+}
+.shop2:hover{
+    transform: scale(1.1);
+}
+.shop3:hover{
+    transform: scale(1.1);
+}
+.shop4:hover{
+    transform: scale(1.1);
+}
+.shopbutt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shopbutton {
+    background-color: #206035;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: domine;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+
+  }
+  .shopbutton:hover {
+    background-color:rgb(8, 66, 8);
+    color: #ffffff;
+    font-size: 20px;
+    font-family: vollkron;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .optioncontainer{
+    height: auto;
+    width:100%;
+    background-color: #edffed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+  }
+  .optionbox1{
+    border-radius: 10px;
+    height: auto;
+    width:800px;
+    background-color: #baf7ba;
+    margin-bottom: 20px;
+
+  }
+  @media screen and (max-width:768px) {
+    .shopcontainer
+{
+    margin-top: 60px;
+    height: 2100px;
+    width: 100vw;
+    background-color: #edffed;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.shopbox1{
+    background-color: #edffed;
+    height: 70px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-size: 34px;
+    font-family: satisfy;
+
+}
+.hr2{
+color:white;
+width:350px;
+display:flex;
+margin-top:3px;
+border:1px solid black;
+}
+.shopbox2{
+    background-color:#edffed;
+    height: 40px;
+    width: auto;
+
+}
+.shopbox3{
+    background-color: #edffed;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-family: robto slab;
+    margin-top: 1%;
+}
+.shopbox4{
+    background-color: #edffed;
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    align-items: center;
+}
+.shop1,
+.shop2,
+.shop3,
+.shop4{
+    height: 440px;
+    width: 330px;
+    background-color: #d0fbd0;
+    transition: 0.4s ease-in-out;
+}
+.shop1:hover{
+    transform: scale(1.1);
+}
+.shop2:hover{
+    transform: scale(1.1);
+}
+.shop3:hover{
+    transform: scale(1.1);
+}
+.shop4:hover{
+    transform: scale(1.1);
+}
+.optionbox1{
+    height: auto;
+    width:800px;
+    background-color: #baf7ba;
+    margin-bottom: 20px;
+
+  }
+  }
