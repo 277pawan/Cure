@@ -40,7 +40,7 @@ function Shop() {
           </div>
           <div className="shop2">
             <div>
-              <img style={{ height: "300px" }} src={pro2} alt="Gotukola"></img>
+              <img style={{ height: "200px" }} src={pro2} alt="Gotukola"></img>
             </div>
             <div
               style={{
@@ -59,7 +59,7 @@ function Shop() {
           <div className="shop3">
             <div>
               <img
-                style={{ height: "300px" }}
+                style={{ height: "200px" }}
                 src={pro3}
                 alt="Aswagandha"
               ></img>
@@ -80,7 +80,7 @@ function Shop() {
           </div>
           <div className="shop4">
             <div>
-              <img style={{ height: "300px" }} src={pro4} alt="Nirgundhi"></img>
+              <img style={{ height: "200px" }} src={pro4} alt="Nirgundhi"></img>
             </div>
             <div
               style={{
