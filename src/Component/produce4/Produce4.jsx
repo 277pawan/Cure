@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./Produce4.css";
 import pro1 from "../../Assets/mint1.png";
-import pro2 from "../../Assets/gotukola1.png";
-import pro4 from "../../Assets/nirgundhi1.png";
-import Aswagandha1 from "../../Assets/nirgundhi1.png";
-import Aswagandha2 from "../../Assets/nirgundhi2.png";
+import pro2 from "../../Assets/gotukola2.png";
+import pro3 from "../../Assets/Aswagandha2.png";
+import Aswagandha1 from "../../Assets/nirgundhi2.png";
+import Aswagandha2 from "../../Assets/nirgundhi1.png";
 
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 function Produce4() {
   const [pimage, setpimage] = useState(Aswagandha1);
   const [info, setinfo] = useState("descryption");
@@ -144,7 +145,9 @@ function Produce4() {
             </div>
             <div className="shopbutt">
               {" "}
-              <button className="shopbutton">20rs Buy Now</button>
+              <Link exact to="/Produce1">
+                <button className="shopbutton">20rs Buy Now</button>
+              </Link>
             </div>
           </div>
           <div className="shop3" style={{ margin: "10px" }}>
@@ -162,12 +165,15 @@ function Produce4() {
             </div>
             <div className="shopbutt">
               {" "}
-              <button className="shopbutton">20rs Buy Now</button>
+              <Link exact to="/Produce2">
+                {" "}
+                <button className="shopbutton">20rs Buy Now</button>
+              </Link>
             </div>
           </div>
           <div className="shop4" style={{ margin: "10px" }}>
             <div>
-              <img style={{ height: "200px" }} src={pro4} alt="Nirgundhi"></img>
+              <img style={{ height: "200px" }} src={pro3} alt="Nirgundhi"></img>
             </div>
             <div
               style={{
@@ -176,11 +182,13 @@ function Produce4() {
                 textAlign: "center",
               }}
             >
-              Nirgundhi Kwath
+              Aswagandha tablets
             </div>
             <div className="shopbutt">
               {" "}
-              <button className="shopbutton">20rs Buy Now</button>
+              <Link exact to="/produce3">
+                <button className="shopbutton">20rs Buy Now</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Produce3.css";
-import pro1 from "../../Assets/mint1.png";
+import pro1 from "../../Assets/mint2.png";
 import pro2 from "../../Assets/gotukola1.png";
-import pro4 from "../../Assets/nirgundhi1.png";
+import pro4 from "../../Assets/nirgundhi2.png";
 import Aswagandha1 from "../../Assets/Aswagandha1.png";
 import Aswagandha2 from "../../Assets/Aswagandha2.png";
 
