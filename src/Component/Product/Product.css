@@ -87,5 +87,12 @@
       width: 90%;
       margin: 10px 0;
     }
+     
+  .imagetext {
+    font-size: 50px;
+    font-family: "roboto slab";
+    color: black;
+  }
+  
   }
   

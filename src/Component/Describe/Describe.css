@@ -73,7 +73,13 @@
     }
     
   }
-  /* Responsive styles */
+  .describehr{
+    width: 150px;
+    background-color: darkgreen;
+    height: 3px;
+    margin-top: 2%;
+    margin-left: 35%;
+  }
   @media screen and (max-width: 768px) {
     .describecontainer {
       flex-direction: column;
@@ -85,6 +91,13 @@
     .box3 {
       width: 90%;
       margin: 10px 0;
+    }
+    .describehr{
+      width: 150px;
+      background-color: darkgreen;
+      height: 3px;
+      margin-top: 2%;
+      margin-left: 20%;
     }
     .boxbutton {
       background-color: #206035;

@@ -8,11 +8,12 @@
     align-items: center;
     background: url("../../Assets/image20.png");
     background-color: #edffed;
-    height: 700px;
+    height: auto;
     width: auto;
 }
 .curelifebox1
 {
+  margin-top: 20px;
     height: 600px;
     width: 700px;
     background-color:none;
@@ -81,14 +82,15 @@
     align-items: center;
     background: url("../../Assets/image20.png");
     background-color: #edffed;
-    height: 900px;
+    height: auto;
     width: auto;
 }
     .curelifebox1
 {
-    height: 700px;
+    height: auto;
     width: 700px;
     background-color: none;
+    margin-bottom: 20px;
 }  
 .spancure
 {

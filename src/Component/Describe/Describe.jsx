@@ -36,15 +36,7 @@ function Describe() {
     <div className="describecontainer" ref={describeref}>
       <div className="box1">
         <div className="boxheading">Patients</div>
-        <hr
-          style={{
-            width: "100px",
-            backgroundColor: "black",
-            height: "2px",
-            marginTop: "2%",
-            marginLeft: "40%",
-          }}
-        ></hr>
+        <hr className="describehr"></hr>
         <br></br>
         <div className="boxdescript">
           Chronic pain, sleep disorders or migraines can significantly reduce
@@ -58,15 +50,7 @@ function Describe() {
       </div>
       <div className="box2">
         <div className="boxheading">For Doctors</div>
-        <hr
-          style={{
-            width: "150px",
-            backgroundColor: "green",
-            height: "2px",
-            marginTop: "2%",
-            marginLeft: "35%",
-          }}
-        ></hr>
+        <hr className="describehr"></hr>
         <br></br>
         <div className="boxdescript">
           Chronic pain, sleep disorders or migraines can significantly reduce
@@ -81,15 +65,7 @@ function Describe() {
       <div className="box3">
         {" "}
         <div className="boxheading">For Pharmacists</div>
-        <hr
-          style={{
-            width: "200px",
-            backgroundColor: "green",
-            height: "2px",
-            marginTop: "2%",
-            marginLeft: "30%",
-          }}
-        ></hr>
+        <hr className="describehr"></hr>
         <br></br>
         <div className="boxdescript">
           Chronic pain, sleep disorders or migraines can significantly reduce
