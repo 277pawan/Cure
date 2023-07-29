@@ -1,23 +1,23 @@
 import React, { useState } from "react";
-import "./Produce1.css";
-import mint1 from "../../Assets/mint1.png";
-import mint2 from "../../Assets/mint2.png";
+import "./Produce3.css";
+import pro1 from "../../Assets/mint1.png";
 import pro2 from "../../Assets/gotukola1.png";
-import pro3 from "../../Assets/Aswagandha1.png";
 import pro4 from "../../Assets/nirgundhi1.png";
-import { Link } from "react-router-dom";
-import Footer from "../Footer/Footer";
+import Aswagandha1 from "../../Assets/Aswagandha1.png";
+import Aswagandha2 from "../../Assets/Aswagandha2.png";
 
-function Produce1() {
-  const [pimage, setpimage] = useState(mint1);
+import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
+function Produce3() {
+  const [pimage, setpimage] = useState(Aswagandha1);
   const [info, setinfo] = useState("descryption");
 
   function handlemint1() {
-    setpimage(mint1);
+    setpimage(Aswagandha1);
   }
 
   function handlemint2() {
-    setpimage(mint2);
+    setpimage(Aswagandha2);
   }
 
   function handleinfo() {
@@ -36,18 +36,18 @@ function Produce1() {
           <img
             className="mintbutton"
             onClick={handlemint1}
-            src={mint1}
+            src={Aswagandha1}
             alt="mint"
           />
           <img
             className="mintbutton"
             onClick={handlemint2}
-            src={mint2}
+            src={Aswagandha2}
             alt="mint"
           />
         </div>
         <div className="producebox2">
-          <div className="produceheading">Mint and Mullerbox</div>
+          <div className="produceheading">Aswagandha Tablets</div>
           <div className="producecost">Rs 100</div>
           <div className="producebrief">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -109,11 +109,13 @@ function Produce1() {
                   style={{
                     backgroundColor: "transparent",
                     width: "100%",
-                    border: "2px solid darkgreen",
+                    border: "2px solid",
+                    borderColor: "darkgreen",
                   }}
                   id="comment"
                   name="comment"
                   cols="183"
+                  color="red"
                   rows="5"
                   required
                 />
@@ -130,6 +132,27 @@ function Produce1() {
         <div className="related">
           <div className="shop2" style={{ margin: "10px" }}>
             <div>
+              <img style={{ height: "200px" }} src={pro1} alt="Gotukola"></img>
+            </div>
+            <div
+              style={{
+                fontSize: "24px",
+                fontFamily: "vollkron",
+                textAlign: "center",
+              }}
+            >
+              Mint
+            </div>
+            <div className="shopbutt">
+              {" "}
+              <Link exact to="/Produce1">
+                {" "}
+                <button className="shopbutton">20rs Buy Now</button>
+              </Link>
+            </div>
+          </div>
+          <div className="shop3" style={{ margin: "10px" }}>
+            <div>
               <img style={{ height: "200px" }} src={pro2} alt="Gotukola"></img>
             </div>
             <div
@@ -144,30 +167,7 @@ function Produce1() {
             <div className="shopbutt">
               {" "}
               <Link exact to="/Produce2">
-                <button className="shopbutton">20rs Buy Now</button>
-              </Link>
-            </div>
-          </div>
-          <div className="shop3" style={{ margin: "10px" }}>
-            <div>
-              <img
-                style={{ height: "200px" }}
-                src={pro3}
-                alt="Aswagandha"
-              ></img>
-            </div>
-            <div
-              style={{
-                fontSize: "24px",
-                fontFamily: "vollkron",
-                textAlign: "center",
-              }}
-            >
-              Ashwagandha{" "}
-            </div>
-            <div className="shopbutt">
-              {" "}
-              <Link eaxct to="/Produce3">
+                {" "}
                 <button className="shopbutton">20rs Buy Now</button>
               </Link>
             </div>
@@ -200,4 +200,4 @@ function Produce1() {
   );
 }
 
-export default Produce1;
+export default Produce3;

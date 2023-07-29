@@ -19,6 +19,9 @@ import Login from './Component/Login/Login';
 import Profile from './Component/Profile/Profile';
 import Shop from './Component/Shop/Shop';
 import Produce1 from './Component/Produce1/Produce1';
+import Produce2 from './Component/Produce2/Produce2';
+import Produce3 from './Component/Produce3/Produce3';
+import Produce4 from './Component/produce4/Produce4';
 
 function App() {
   return (
@@ -46,9 +49,10 @@ function App() {
           <Route path='/Login' element={<Login />}></Route>
           <Route path='/Profile' element={<Profile />}></Route>
           <Route path='/Shop' element={<Shop />}></Route>
-          <Route path='/Produce' element={<Produce1 />}></Route>
-
-
+          <Route path='/Produce1' element={<Produce1 />}></Route>
+          <Route path='/Produce2' element={<Produce2 />}></Route>
+          <Route path='/Produce3' element={<Produce3 />}></Route>
+          <Route path='/Produce4' element={<Produce4 />}></Route>
 
 
         </Routes>

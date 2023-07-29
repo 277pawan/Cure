@@ -1,0 +1,177 @@
+.produce1container {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(to right, #edffed, #e2fce2, #eaffdf);
+}
+
+.producebox1 {
+  height: 600px;
+  width: 600px;
+  background-color: #eaffdf;
+}
+
+.producebox2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: 600px;
+  width: 600px;
+  background-color: #eaffdf;
+}
+
+.mint1image {
+  height: 450px;
+  width: 600px;
+  border-radius: 10px;
+}
+
+.mintbutton {
+  margin: 0px 10px 0px 10px;
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+  transition: 0.4s ease-in-out;
+}
+
+.mintbutton:hover {
+  transform: scale(1.05);
+}
+
+.produceheading {
+  font-family: visper libre;
+  font-size: 50px;
+}
+
+.producecost {
+  font-size: 30px;
+}
+
+.producebrief {
+  font-size: 24px;
+  font-family: vollkron;
+}
+
+.producecart,
+.producewishlist {
+  background-color: #206035;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: domine;
+  border: none;
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.producecart:hover,
+.producewishlist:hover {
+  background-color: #093819;
+}
+
+.descryptionbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #edffed;
+  padding: 20px;
+}
+
+.descryptionbox span {
+  font-size: 40px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.describeheading {
+  font-size: 30px;
+  font-family: vollkron;
+  font-weight: 600;
+}
+
+.info {
+  font-size: 20px;
+  font-family: roboto slab;
+}
+
+.describe {
+  background-color: #e3fcd5;
+  padding: 20px;
+  border-radius: 5px;
+}
+.reviews{
+    background-color: #e3fcd5;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80vw;
+}
+.reviewtitle{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: lobster;
+}
+.reviewname,.reviewemail{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Visper Libre", sans-serif;
+    background-color: transparent;
+    transition: border-color 0.3s ease;  
+    border:2px solid rgb(25, 99, 43);
+}
+.reviewname:focus,
+.reviewemail:focus
+{
+  outline: none;
+  border-color: blue;
+}
+.related{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+@media screen and (max-width:768px) {
+    .produce1container {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        padding: 40px;
+        background: linear-gradient(to right, #edffed, #e2fce2, #eaffdf);
+      }
+      .producebox2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 0px;
+        height: 600px;
+        width: 600px;
+        background-color: #eaffdf;
+      }
+      
+      .mint1image {
+        height: 450px;
+        width: 100vw;
+        border-radius: 10px;
+      }
+}

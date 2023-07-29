@@ -56,7 +56,9 @@ function Shop() {
             </div>
             <div className="shopbutt">
               {" "}
-              <button className="shopbutton">20rs Buy Now</button>
+              <Link exact to="/Produce2">
+                <button className="shopbutton">20rs Buy Now</button>
+              </Link>
             </div>
           </div>
           <div className="shop3">
@@ -78,7 +80,9 @@ function Shop() {
             </div>
             <div className="shopbutt">
               {" "}
-              <button className="shopbutton">20rs Buy Now</button>
+              <Link exact to="/Produce3">
+                <button className="shopbutton">20rs Buy Now</button>
+              </Link>
             </div>
           </div>
           <div className="shop4">
@@ -95,8 +99,9 @@ function Shop() {
               Nirgundhi Kwath
             </div>
             <div className="shopbutt">
-              {" "}
-              <button className="shopbutton">20rs Buy Now</button>
+              <Link exact to="/Produce4">
+                <button className="shopbutton">20rs Buy Now</button>
+              </Link>
             </div>
           </div>
         </div>
