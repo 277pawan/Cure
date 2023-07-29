@@ -71,6 +71,7 @@
     font-size: 50px;
     font-family: fantasy;
     margin-left: 0%;
+    color: darkgreen;
   }
 @media screen and (max-width:768px) {
     .curelifecontainer
@@ -97,6 +98,7 @@
   font-size: 50px;
   font-family: fantasy;
   margin-left: 0%;
+  color: darkgreen;
 }
 .curelifeheading{
     text-align: center;

@@ -86,7 +86,7 @@
 
   .carousel {
     width:1000px; 
-    margin: 20px 0px 0px -620px;
+    margin: 20px 0px 0px -600px;
     display: flex;
     justify-content: center;
   }
@@ -130,12 +130,20 @@
     margin-top: 20px;
   }
 }
-
+@media screen and (max-width:395px) {
+  .carousel {
+    width:945px; 
+    /* max-width: 700px; */
+  margin: 20px 0px 0px -573px;
+  display: flex;
+  justify-content: center;
+  }
+}
 @media screen and (max-width: 360px) {
   .carousel {
-    width:850px; 
+    width:890px; 
     /* max-width: 700px; */
-  margin: 20px 0px 0px -510px;
+  margin: 20px 0px 0px -540px;
   display: flex;
   justify-content: center;
   }
