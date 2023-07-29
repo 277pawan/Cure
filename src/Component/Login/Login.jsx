@@ -118,7 +118,7 @@ function Login() {
             </span>
             &nbsp;google
           </button>
-          <div style={{ marginTop: "5%", fontSize: "20px", marginLeft: "-1%" }}>
+          <div style={{ marginTop: "5%", fontSize: "25px", marginLeft: "-1%" }}>
             Don't have an account?{" "}
             <Link to="/Register">
               <span style={{ textDecoration: "none" }}>Register</span>
