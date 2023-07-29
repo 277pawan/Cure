@@ -58,8 +58,8 @@ function Produce2() {
           </div>
           <button className="producecart">Add to Cart</button>
           <button className="producewishlist">Add to Wishlist</button>
-          <div style={{ fontSize: "18px" }}>Categories</div>
-          <div style={{ fontSize: "18px" }}>Tags</div>
+          <div style={{ fontSize: "18px", marginLeft: "10px" }}>Categories</div>
+          <div style={{ fontSize: "18px", marginLeft: "10px" }}>Tags</div>
         </div>
       </div>
       <div className="descryptionbox">

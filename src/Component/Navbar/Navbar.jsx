@@ -58,7 +58,7 @@ function Navbar() {
                 <p style={{ fontSize: "20px" }}>
                   {userName ? userName : "John Doe"}
                 </p>
-                <p style={{ fontSize: "20px" }}>
+                <p style={{ fontSize: "20px", marginLeft: "-15px" }}>
                   {" "}
                   {userEmail ? userEmail : "JohnDoe@277gmail.com"}
                 </p>

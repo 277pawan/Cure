@@ -147,7 +147,7 @@
 }
 @media screen and (max-width:768px) {
     .produce1container {
-        margin-top: 50px;
+        margin-top: 0px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -158,20 +158,63 @@
         padding: 40px;
         background: linear-gradient(to right, #edffed, #e2fce2, #eaffdf);
       }
+      .producebox1 {
+        height: 530px;
+        width: 100vw;
+        background-color: #eaffdf;
+      }
+      
       .producebox2 {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         flex-wrap: wrap;
-        padding: 0px;
-        height: 600px;
+        /* padding: 20px; */
+        height: 680px;
         width: 600px;
+        margin-left: -60px;
         background-color: #eaffdf;
       }
       
       .mint1image {
-        height: 450px;
+        height: 400px;
         width: 100vw;
         border-radius: 10px;
+      }
+      .produceheading {
+        font-family: visper libre;
+        font-size: 50px;
+        padding: 10px;
+      }
+      
+      .producecost {
+        font-size: 30px;
+        padding: 10px;
+      }
+      
+      .producebrief {
+        font-size: 24px;
+        font-family: vollkron;
+        padding: 10px;
+      }
+      
+      .producecart,
+      .producewishlist {
+        background-color: #206035;
+        color: #ffffff;
+        font-size: 20px;
+        font-family: domine;
+        border: none;
+        width: 200px;
+   
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+        margin-left: 10px;
+      }
+      
+      .producecart:hover,
+      .producewishlist:hover {
+        background-color: #093819;
       }
 }
