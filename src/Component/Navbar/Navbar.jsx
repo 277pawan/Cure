@@ -61,7 +61,7 @@ function Navbar() {
                 <p
                   style={{
                     fontSize: "20px",
-                    marginLeft: "0px",
+                    marginLeft: "-24px",
                     textAlign: "center",
                   }}
                 >
