@@ -55,12 +55,12 @@ function Navbar() {
           {profileBoxVisible && (
             <div id="profileBox">
               <div className="profileInfo">
-                <p style={{ fontSize: "20px" }}>
+                <p style={{ fontSize: "19px" }}>
                   {userName ? userName : "John Doe"}
                 </p>
                 <p
                   style={{
-                    fontSize: "20px",
+                    fontSize: "19px",
                     marginLeft: "-24px",
                     textAlign: "center",
                   }}
