@@ -33,7 +33,7 @@ function Cannabis() {
         el.classList.remove("in-view");
       });
     }
-  }, []);
+  }, [isintersecting]);
 
   return (
     <div className="cannabiscontainer" ref={cannref}>
