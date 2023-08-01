@@ -154,7 +154,9 @@ function Navbar() {
           )}
         </li>
         <Link to="/Contact">
-          <li className="windowli">Contact</li>
+          <li style={{ color: "black" }} className="windowli">
+            Contact
+          </li>
         </Link>
         <li onClick={insightscroll} className="windowli">
           Insights
