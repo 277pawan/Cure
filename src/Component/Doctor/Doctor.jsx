@@ -25,6 +25,9 @@ function Doctor() {
     });
   };
   useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when Doctor component mounts
+  }, []);
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -84,9 +87,7 @@ function Doctor() {
           <button className="patientbutton" onClick={handlescrolldown}>
             Book online consultation
           </button>
-          <div className="doctordiv">
-            First consultation is free and after 100rs/Week
-          </div>
+          <div className="doctordiv">Explore Pro Plan for consultation.</div>
         </div>
       </div>
       <div className="whycurecontainer">
@@ -170,7 +171,7 @@ function Doctor() {
           <div>
             <input
               className="whytime"
-              type="time"
+              type="datetime-local"
               placeholder="Time..."
               onChange={(e) => {
                 settime(e.target.value);
@@ -178,6 +179,7 @@ function Doctor() {
               value={time}
             ></input>
           </div>
+          {time}
           <div>
             <input
               className="whyemail"

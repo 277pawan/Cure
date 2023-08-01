@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Produce4.css";
 import pro1 from "../../Assets/mint1.png";
 import pro2 from "../../Assets/gotukola2.png";
@@ -11,7 +11,9 @@ import { Link } from "react-router-dom";
 function Produce4() {
   const [pimage, setpimage] = useState(Aswagandha1);
   const [info, setinfo] = useState("descryption");
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   function handlemint1() {
     setpimage(Aswagandha1);
   }

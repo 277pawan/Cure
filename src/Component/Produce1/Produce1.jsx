@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Produce1.css";
 import mint1 from "../../Assets/mint1.png";
 import mint2 from "../../Assets/mint2.png";
@@ -11,7 +11,9 @@ import Footer from "../Footer/Footer";
 function Produce1() {
   const [pimage, setpimage] = useState(mint1);
   const [info, setinfo] = useState("descryption");
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   function handlemint1() {
     setpimage(mint1);
   }

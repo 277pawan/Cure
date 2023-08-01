@@ -1,6 +1,6 @@
 .logincontainer{
-    margin-top: 92px;
-    height: 670px;
+    margin-top: 75px;
+    height: 95vh;
     width: 100%;
     background-color: green;
     display: flex;
@@ -88,7 +88,7 @@ outline: none;
 @media screen and (max-width:768px) {
     .logincontainer{
         margin-top: 42px;
-        height: auto;
+        height: 100vh;
         width: 100%;
         background-color: green;
         display: flex;

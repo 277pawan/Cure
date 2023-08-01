@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Patient.css";
 import image13 from "../../Assets/image13.png";
 import image14 from "../../Assets/image14.png";
@@ -15,6 +15,9 @@ function Patient() {
       behavior: "smooth",
     });
   };
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when Doctor component mounts
+  }, []);
   return (
     <>
       <div className="patientcontainer">
@@ -89,9 +92,7 @@ function Patient() {
               </div>
             </div>
           ) : (
-            <div className="patientlogin">
-              Login for Continue Reading such a interesting facts.....
-            </div>
+            <div className="patientlogin">Explore Pro Plan.</div>
           )}
           {username && (
             <div className="patientbox4">

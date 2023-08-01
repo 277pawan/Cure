@@ -31,7 +31,6 @@ function Describe() {
       });
     }
   }, [isintersecting]);
-
   return (
     <div className="describecontainer" ref={describeref}>
       <div className="box1">

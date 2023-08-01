@@ -1,5 +1,5 @@
 .pharmacontainer{
-    margin-top:80px ;
+    margin-top:75px ;
     height: auto;
     width: auto;
     background-color:  #eaffdf;
@@ -9,12 +9,15 @@
     height: 700px;
     width: 95%;
 }
+.pbox1{
+    background-color: #eaffdf;
+}
 .pharmatext
 {
     font-family: lobster;
     font-size: 50px;
     text-align: center;
-    background-color: #e0ffcf;
+    background-color: #eaffdf;
 }
 @media screen and (max-width:768px) {
     .pharmacontainer{

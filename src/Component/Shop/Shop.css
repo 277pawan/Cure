@@ -1,6 +1,6 @@
 .shopcontainer
 {
-    margin-top: 90px;
+    margin-top: 75px;
     height: auto;
     width: 100vw;
     background-color: #edffed;
@@ -124,11 +124,19 @@ border:1px solid black;
     margin-bottom: 20px;
 
   }
+  .shopdesc
+  {
+    height: auto;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: lora;
+  }
   @media screen and (max-width:768px) {
     .shopcontainer
 {
     margin-top: 60px;
-    height: 2100px;
+    height: 1900px;
     width: 100vw;
     background-color: #edffed;
     display: flex;
@@ -185,6 +193,7 @@ border:1px solid black;
 .shop2,
 .shop3,
 .shop4{
+    margin-top: 20px;
     height: 360px;
     width: 330px;
     background-color: #d0fbd0;

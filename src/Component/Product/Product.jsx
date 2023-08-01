@@ -38,7 +38,7 @@ function Product() {
 
   return (
     <div className="productcontainer" ref={productref}>
-      <div className="pbox1">
+      <div className="pboxs1">
         <img className="image1" src={image1} alt="shopimage"></img>
         <div className="imagetext">
           We support your therapy, your patients and customers with medical

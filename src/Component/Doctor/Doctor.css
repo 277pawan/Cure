@@ -1,5 +1,5 @@
 .doctorcontainer {
-    margin-top: 80px;
+    margin-top: 75px;
     height: 700px;
     width: auto;
     background-color: #eaffdf;
@@ -56,10 +56,11 @@
     font-size: 28px;
     font-family: domine;
     padding: 20px;
+    text-align: center;
   }
   
   .whycureflex {
-    height: 220px;
+    height: auto;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -214,9 +215,10 @@ width: 1200px;
   
     .doctorheading {
       font-size: 60px;
-      top: 15%;
+      top: 12%;
       left: 0%;
       padding: 2px;
+      text-align: center;
     }
   
     .doctordiv {
@@ -239,7 +241,21 @@ width: 1200px;
       height: 390px;
       justify-content: center;
     }
-  
+    .curebox1,
+    .curebox2,
+    .curebox3 {
+      margin: 0px 7px 1px 7px;
+      font-size: 30px;
+      font-family: lobster;
+      height: 160px;
+      width: 160px;
+      padding: 10px;
+      border-radius: 100px;
+      text-align: center;
+      background-color: rgb(162, 237, 160);
+      cursor: pointer;
+      box-shadow: inset 5px 0px 5px #27700c, 0px 0px 0px #22650a;
+    }
     .whybox2 {
       margin-top: -120px;
       width: 100%;

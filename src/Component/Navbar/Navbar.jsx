@@ -3,7 +3,7 @@ import "./Navbar.css";
 import verstaile from "../../Assets/verstaileimage.png";
 import hamsopen from "../../Assets/Hamburg.png";
 import hamsclose from "../../Assets/hamburgclose.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Usestore from "../Usestore";
 function Navbar() {
   const [hamimagevisible, sethamimagevisible] = useState(true);
@@ -13,6 +13,9 @@ function Navbar() {
   const userImage = Usestore((state) => state.image);
   const logoutfunction = Usestore((state) => state.logout);
   const uid = Usestore((state) => state.uid);
+  const navigateprofile = useNavigate();
+  const navigatelogin = useNavigate();
+
   function hamburghandle() {
     sethamimagevisible(!hamimagevisible);
   }
@@ -22,10 +25,26 @@ function Navbar() {
   }
   const handleprofilebox = () => {
     setProfileBoxVisible(!profileBoxVisible);
+    navigateprofile("/Profile");
   };
+  const handlelogin = () => {
+    setProfileBoxVisible(!profileBoxVisible);
+    navigatelogin("/Login");
+  };
+  function insightscroll() {
+    window.scrollTo({
+      top: 2020,
+      behavior: "smooth",
+    });
+  }
+  function productscroll() {
+    window.scrollTo({
+      top: 1100,
+      behavior: "smooth",
+    });
+  }
   return (
     <div className="navbarcontainer">
-      {/* For Mobile Phones */}
       <ul className="mobileul">
         <li className="cure">Cure</li>
         <li style={{ listStyle: "none" }}>
@@ -92,7 +111,10 @@ function Navbar() {
         <li className="windowli">Home</li>
       </ul>
       <ul className="windowul">
-        <li className="cure">Cure</li>
+        <Link to="/">
+          {" "}
+          <li className="cure">Cure</li>
+        </Link>
         <li className="verstaileli">
           <img
             className="verstaile"
@@ -111,27 +133,41 @@ function Navbar() {
                 </p>
               </div>
               <div className="profileActions">
-                <Link to="/Profile">
-                  <button onClick={handleprofilebox} className="navbarlogin">
-                    UserProfile
-                  </button>
-                </Link>
+                <button onClick={handleprofilebox} className="navbarlogin">
+                  UserProfile
+                </button>
               </div>
               <div className="profileActions">
-                <Link to="/Login">
-                  <button onClick={logoutfunction} className="navbarlogin">
-                    {userName ? "Logout" : "Login"}
+                {userName ? (
+                  <Link to="/Login">
+                    <button onClick={logoutfunction} className="navbarlogin">
+                      Logout
+                    </button>
+                  </Link>
+                ) : (
+                  <button onClick={handlelogin} className="navbarlogin">
+                    Login
                   </button>
-                </Link>
+                )}
               </div>
             </div>
           )}
         </li>
-        {/* <li className="windowli"> About</li> */}
-        <li className="windowli">Contact</li>
-        <li className="windowli">Insights</li>
-        <li className="windowli">Products</li>
-        <li className="windowli">Home</li>
+        <Link to="/Contact">
+          <li className="windowli">Contact</li>
+        </Link>
+        <li onClick={insightscroll} className="windowli">
+          Insights
+        </li>
+        <li onClick={productscroll} className="windowli">
+          Products
+        </li>
+        <Link to="/">
+          {" "}
+          <li style={{ color: "black" }} className="windowli">
+            Home
+          </li>
+        </Link>
       </ul>
     </div>
   );

@@ -5,13 +5,13 @@
 /* Global styles */
 
 .registercontainer {
-    margin-top: 93px;
+    margin-top: 75px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 95vh;
   background-color: #2f9120;
 }
 
@@ -129,7 +129,7 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      height: auto;
+      height: 100vh;
       width: 100vw;
       background-color: #2f9120;
     }
@@ -178,7 +178,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-    margin-left: 20%;
+    margin-left: 24%;
     background-color: #2f9120;
     color:white;
     transition: background-color 0.3s ease;

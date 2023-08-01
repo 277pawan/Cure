@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Pharma.css";
 import image18 from "../../Assets/image18.png";
 import image10 from "../../Assets/image10.png";
@@ -15,6 +15,9 @@ function Pharma() {
       behavior: "smooth",
     });
   };
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when Doctor component mounts
+  }, []);
   return (
     <>
       <div className="pharmacontainer">
@@ -33,7 +36,7 @@ function Pharma() {
           </button>
         </div>
         <div className="productcontainer">
-          <div className="pbox1" style={{ backgroundColor: "#e0ffcf" }}>
+          <div className="pbox1">
             {/* <img className="image1" src={image1} alt="shopimage"></img> */}
             <div className="pharmatext">
               This is what you can expect from us

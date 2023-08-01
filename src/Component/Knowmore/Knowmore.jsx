@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Knowmore.css";
 import mint from "../../Assets/mint.png";
 import nirgundhi from "../../Assets/Nidgundhi.png";
@@ -7,7 +7,9 @@ import gotkola from "../../Assets/gotukola.png";
 import Footer from "../Footer/Footer";
 function Knowmore() {
   const [openSummaryIndex, setOpenSummaryIndex] = useState(0);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const faqData = [
     {
       question: "What about insurance coverage?",

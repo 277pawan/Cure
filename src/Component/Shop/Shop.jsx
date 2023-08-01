@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Shop.css";
 import pro1 from "../../Assets/mint1.png";
 import pro2 from "../../Assets/gotukola1.png";
@@ -8,6 +8,9 @@ import mintleaf from "../../Assets/mintlogo.png";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 function Shop() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="shopcontainer">
@@ -136,15 +139,7 @@ function Shop() {
             >
               C U R E
             </div>
-            <div
-              style={{
-                height: "250px",
-                fontSize: "22px",
-                textAlign: "center",
-                marginBottom: "30px",
-                fontFamily: "lora",
-              }}
-            >
+            <div className="shopdesc">
               We at Cure provide various services to the nature of the clients.
               Wish how you would like to spend the time here we can talk and
               come to a conclusion. Phasellus et nisl tellus. Etiam facilisis eu

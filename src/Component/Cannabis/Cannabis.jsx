@@ -15,7 +15,7 @@ function Cannabis() {
         });
       },
       {
-        threshold: 0.5,
+        threshold: 0.6,
       }
     );
     observer.observe(cannref.current);
@@ -33,7 +33,7 @@ function Cannabis() {
         el.classList.remove("in-view");
       });
     }
-  }, [isintersecting]);
+  }, []);
 
   return (
     <div className="cannabiscontainer" ref={cannref}>

@@ -1,9 +1,41 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Curelife.css";
 import { Link } from "react-router-dom";
 function Curelife() {
+  const cureliferef = useRef(null);
+  const [intersection, setintersection] = useState("");
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entry) => {
+        entry.forEach((entries) => {
+          setintersection(entries.isIntersecting);
+        });
+      },
+      {
+        threshold: 0.6,
+      }
+    );
+    observer.observe(cureliferef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  });
+  useEffect(() => {
+    const boxButtons = cureliferef.current.querySelectorAll(".curelifebutton");
+    if (intersection) {
+      boxButtons.forEach((el) => {
+        el.classList.add("in-view");
+      });
+    } else {
+      boxButtons.forEach((el) => {
+        el.classList.remove("in-view");
+      });
+    }
+  }, [intersection]);
+
   return (
-    <div className="curelifecontainer">
+    <div className="curelifecontainer" ref={cureliferef}>
       <div className="curelifebox1">
         <div className="curelifeheading">
           Your Life of Ayurvedha with <br></br>
