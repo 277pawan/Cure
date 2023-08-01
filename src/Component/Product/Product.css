@@ -62,7 +62,7 @@
     padding: 20px;
     margin: 0 10px;
     border-radius: 5px;
-    box-shadow: inset 0px 5px 5px green;
+    box-shadow: 5px 5px 5px  rgb(164, 172, 164);
 }
   .pbox4 .image2,
   .pbox5 .image3,
