@@ -125,6 +125,7 @@ function Shop() {
                   height: "200px",
                   width: "auto",
                   borderRadius: "20px",
+                  filter: "drop-shadow(10px 10px 05px black)",
                 }}
                 src={mintleaf}
                 alt="Mint"
