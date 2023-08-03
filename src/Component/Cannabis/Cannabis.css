@@ -13,10 +13,18 @@
   .image10{
         height: 550px;
         width: 350px;
+        transition: all ease-in-out 1s; 
+    }
+    .image10:hover{
+        scale: 1.2;
     }
     .image11{
         height: 550px;
         width: 350px;
+        transition: all ease-in-out 1s; 
+    }
+    .image11:hover{
+        scale: 1.2;
     }
 .cannbox1
 {
@@ -24,6 +32,9 @@
     height: 550px;
     width: 350px;
     background-color: antiquewhite;
+    overflow: hidden;
+    transition: all ease-in-out 0.8s;
+    cursor: pointer;
 }
 .cannbox2
 {
@@ -31,6 +42,9 @@
     height: 550px;
     width: 350px;
     background-color: rgb(255, 145, 0);
+    overflow: hidden;
+    transition: all ease-in-out 0.8s;
+    cursor: pointer;
 }.cannbox3
 {
     margin-top: 30px;

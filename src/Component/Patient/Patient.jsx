@@ -6,6 +6,7 @@ import image15 from "../../Assets/image15.png";
 import image16 from "../../Assets/image16.png";
 import image17 from "../../Assets/image17.png";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 function Patient() {
   const [username, setusername] = useState(false);
@@ -92,7 +93,13 @@ function Patient() {
               </div>
             </div>
           ) : (
-            <div className="patientlogin">Explore Pro Plan.</div>
+            <Link
+              style={{ textDecoration: "none", color: "white" }}
+              exact
+              to="/Proplan"
+            >
+              <div className="patientlogin">Explore Pro Plan.</div>
+            </Link>
           )}
           {username && (
             <div className="patientbox4">

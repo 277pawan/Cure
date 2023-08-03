@@ -233,6 +233,8 @@ text-align: center;
   }
   .patientlogin{
     height: auto;
+    text-decoration: none;
+    border-bottom: none;
     border-radius: 10px;
     font-family: lobster;
     text-align: center;
@@ -244,6 +246,10 @@ color:white;
     background-color: #3e5944;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+}
+.patientlogin:hover{
+  transform: scale(0.94);
 }
   @media screen and (max-width:768px) {
 

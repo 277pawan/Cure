@@ -22,6 +22,7 @@ import Produce1 from './Component/Produce1/Produce1';
 import Produce2 from './Component/Produce2/Produce2';
 import Produce3 from './Component/Produce3/Produce3';
 import Produce4 from './Component/produce4/Produce4';
+import Proplan from './Component/Proplan/Proplan';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
           <Route path='/Produce2' element={<Produce2 />}></Route>
           <Route path='/Produce3' element={<Produce3 />}></Route>
           <Route path='/Produce4' element={<Produce4 />}></Route>
+          <Route path='/Proplan' element={<Proplan />}></Route>
 
 
         </Routes>
