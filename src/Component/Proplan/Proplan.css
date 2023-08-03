@@ -83,7 +83,7 @@
   
   @media screen and (max-width: 600px) {
     .proplancontainer {
-        margin-top: 75px;
+        margin-top: 60px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -91,7 +91,7 @@
         justify-content: center;
         align-items: center;
         padding: 20px;
-        height: 92vh;
+        height: auto;
         background-color: #eaffdf;
       }
       
@@ -102,6 +102,7 @@
         border-radius: 8px;
         width: 550px;
         overflow: hidden;
+        margin-top: 10px;
         transition: transform 0.2s ease;
       }
     
