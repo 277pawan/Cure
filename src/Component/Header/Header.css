@@ -1,7 +1,7 @@
 .headercontainer {
     position: relative;
     overflow: hidden;
-    height: 90vh;
+    height: 94vh;
     width: 100vw;
   }
   
@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 90vh;
+    height: 92vh;
     object-fit: cover;
   }
   
@@ -30,7 +30,7 @@
     .headercontainer {
       position: relative;
       overflow: hidden;
-      height: 75vh;
+      height: 85vh;
       width: 100vw;
     }
     
