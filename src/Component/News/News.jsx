@@ -3,7 +3,7 @@ import "./News.css";
 
 function News() {
   const [data, setdata] = useState([]);
-  const [loading, setLoading] = useState(true); // Add loading state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchNews() {
@@ -13,10 +13,10 @@ function News() {
         );
         const data = await response.json();
         setdata(data.articles);
-        setLoading(false); // Data fetched, set loading to false
+        setLoading(false);
       } catch (err) {
         console.log(err);
-        setLoading(false); // Handle error and set loading to false
+        setLoading(false);
       }
     }
 
@@ -25,7 +25,7 @@ function News() {
 
   return (
     <div className="newscontainer">
-      {loading ? ( // Render spinner if loading is true
+      {loading ? (
         <div className="spinner-container">
           <div className="spinner"></div>
         </div>
