@@ -4,6 +4,7 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 20px;
     padding: 20px;
+    margin-top: 70px;
   }
   
   /* Article styles */
@@ -60,6 +61,32 @@
   
   .anchor:hover {
     background-color: darkgreen;
+  }
+  .spinner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height:50vh; 
+  }
+  .spinner {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 6px solid greenyellow ;
+    border-top: 6px solid darkgreen;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
   
   /* Responsive styles */

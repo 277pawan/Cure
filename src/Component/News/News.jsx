@@ -3,6 +3,7 @@ import "./News.css";
 
 function News() {
   const [data, setdata] = useState([]);
+  const [loading, setLoading] = useState(true); // Add loading state
 
   useEffect(() => {
     async function fetchNews() {
@@ -12,8 +13,10 @@ function News() {
         );
         const data = await response.json();
         setdata(data.articles);
+        setLoading(false); // Data fetched, set loading to false
       } catch (err) {
         console.log(err);
+        setLoading(false); // Handle error and set loading to false
       }
     }
 
@@ -22,22 +25,28 @@ function News() {
 
   return (
     <div className="newscontainer">
-      {data.map((article, index) => (
-        <div key={index} className="article">
-          <h2>{article.title}</h2>
-          {article.author && <p>Author: {article.author}</p>}
-          <p>{article.description}</p>
-          <img src={article.urlToImage} alt={article.title} />
-          <a
-            className="anchor"
-            href={article.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read more
-          </a>
+      {loading ? ( // Render spinner if loading is true
+        <div className="spinner-container">
+          <div className="spinner"></div>
         </div>
-      ))}
+      ) : (
+        data.map((article, index) => (
+          <div key={index} className="article">
+            <h2>{article.title}</h2>
+            {article.author && <p>Author: {article.author}</p>}
+            <p>{article.description}</p>
+            <img src={article.urlToImage} alt={article.title} />
+            <a
+              className="anchor"
+              href={article.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read more
+            </a>
+          </div>
+        ))
+      )}
     </div>
   );
 }

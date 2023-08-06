@@ -7,7 +7,7 @@ function Newsletter() {
   const navigate = useNavigate("");
   const [err, seterr] = useState("");
   function submitnews() {
-    if (email) {
+    if (!email) {
       navigate("/News");
     } else {
       //   alert("Please fill out this field");
