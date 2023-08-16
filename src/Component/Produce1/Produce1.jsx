@@ -7,10 +7,17 @@ import pro3 from "../../Assets/Aswagandha2.png";
 import pro4 from "../../Assets/nirgundhi1.png";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
-
+import cart from "../../Assets/cart.png";
+import wishlist from "../../Assets/wishlist.png";
+import Usestore from "../Usestore";
+import { addDoc, collection, doc } from "firebase/firestore";
+import { firestore } from "../../Firestore";
 function Produce1() {
   const [pimage, setpimage] = useState(mint1);
   const [info, setinfo] = useState("descryption");
+  const uid = Usestore((state) => state.uid);
+  const [quantity, setquantity] = useState("1");
+  console.log(uid);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -28,6 +35,31 @@ function Produce1() {
 
   function handlereview() {
     setinfo("reviews");
+  }
+  function product1cart() {
+    if (uid) {
+      const cartCollectionRef = collection(firestore, "Cart");
+      const userDocRef = doc(cartCollectionRef, uid);
+      const productsCollectionRef = collection(userDocRef, "products");
+      // const productDocRef = doc(productsCollectionRef, "product1");
+      const productData = {
+        name: "Mint and Mullerbox",
+        quantity: quantity, // Directly use the variable here
+        price: 100,
+        details:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae odit voluptate fugit corrupti aliquam, cumque quas expedita impedit, exercitationem facere ducimus voluptas laboriosam maxime vel! Porro quo aperiam quasi ex!",
+        image: mint1,
+      };
+
+      // Add product data to the subcollection "products"
+      addDoc(productsCollectionRef, productData)
+        .then(() => {
+          console.log("Product added to cart successfully!");
+        })
+        .catch((err) => {
+          console.log("Error adding product to cart:", err);
+        });
+    }
   }
 
   return (
@@ -57,10 +89,46 @@ function Produce1() {
             ratione eius nesciunt, labore ab ullam cum soluta nam quis. Dolore
             praesentium atque sit.
           </div>
-          <button className="producecart">Add to Cart</button>
+          <button onClick={product1cart} className="producecart">
+            <input
+              style={{
+                height: "30px",
+                fontSize: "18px",
+                width: "40px",
+                paddingLeft: "12px",
+                marginRight: "10px",
+              }}
+              type="number"
+              min={1}
+              max={10}
+              value={quantity}
+              onChange={(e) => {
+                setquantity(e.target.value);
+              }}
+            ></input>{" "}
+            Add to Cart
+          </button>
+
           <button className="producewishlist">Add to Wishlist</button>
           <div style={{ fontSize: "18px", marginLeft: "10px" }}>Categories</div>
           <div style={{ fontSize: "18px", marginLeft: "10px" }}>Tags</div>
+        </div>
+        <div className="socialbuttons">
+          <abbr title="Cart">
+            {" "}
+            <Link to="/Cart">
+              {" "}
+              <img className="social" src={cart} alt="cart" />
+            </Link>
+          </abbr>
+
+          <abbr title="Wishlist">
+            {" "}
+            <Link to="/Wishlist">
+              {" "}
+              <img className="social" src={wishlist} alt="wishlist" />
+            </Link>
+          </abbr>
         </div>
       </div>
       <div className="descryptionbox">

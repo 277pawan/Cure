@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import loginimage from "../../Assets/loginimage.png";
 import { Link, Navigate, useNavigate } from "react-router-dom";
-import { auth, provider } from "../../Firestore";
+import { app, auth, provider, firestore } from "../../Firestore";
 import {
   signInWithEmailAndPassword,
   signInWithPopup,
@@ -24,17 +24,13 @@ function Login() {
   function handlelogin(e) {
     e.preventDefault();
     if (email || password) {
-      signInWithEmailAndPassword(auth, email, password)
-        .then((resp) => {
-          const user = resp.user;
-          setuseremail(user.email);
-          setusername(user.displayName);
-          setuid(user.uid);
-          Navigate("/");
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+      signInWithEmailAndPassword(auth, email, password).then((resp) => {
+        const user = resp.user;
+        setuseremail(user.email);
+        setusername(user.displayName);
+        setuid(user.uid);
+        Navigate("/");
+      });
     } else {
       setmessageerr("Fill all the fields.");
       setTimeout(() => {
@@ -43,17 +39,13 @@ function Login() {
     }
   }
   function googlehandle() {
-    signInWithPopup(auth, provider)
-      .then((data) => {
-        setusername(data.user.displayName);
-        setuseremail(data.user.email);
-        setuserimage(data.user.photoURL);
-
-        Navigate("/");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    signInWithPopup(auth, provider).then((data) => {
+      setusername(data.user.displayName);
+      setuseremail(data.user.email);
+      setuserimage(data.user.photoURL);
+      setuid(data.user.uid);
+      Navigate("/");
+    });
   }
   function logout() {
     signOut(auth)

@@ -16,6 +16,25 @@
   width: 600px;
   background-color: #eaffdf;
 }
+.socialbuttons{
+  position:absolute;
+  top:30%;
+  right: 0%;
+  height: 165px;
+  width: 65px;
+  cursor: pointer;
+  background-color: #eaffdf;
+  box-shadow: 0 5px 15px 10px rgba(153, 19, 19, 0.15);
+}
+.social{
+  height: 60px;
+  padding-top: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.social:hover{
+  transform:scale(1.07);
+}
 
 .producebox2 {
   display: flex;
@@ -69,6 +88,7 @@
   border: none;
   width: 200px;
   padding: 10px 20px;
+  display: flex;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 15px;

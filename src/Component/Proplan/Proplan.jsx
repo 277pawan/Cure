@@ -32,7 +32,9 @@ function Proplan() {
           <div className="proboxfeature">Free Newsletter.</div>
         </div>
         <div className="default">
-          <button>Buy Now</button>
+          <button>
+            <a href="https://buy.stripe.com/eVafZ4dwM9jz6ju4gg">Buy Now</a>
+          </button>
         </div>
       </div>
     </div>

@@ -3,23 +3,29 @@ import "./Produce4.css";
 import pro1 from "../../Assets/mint1.png";
 import pro2 from "../../Assets/gotukola2.png";
 import pro3 from "../../Assets/Aswagandha2.png";
-import Aswagandha1 from "../../Assets/nirgundhi2.png";
-import Aswagandha2 from "../../Assets/nirgundhi1.png";
-
+import nira1 from "../../Assets/nirgundhi2.png";
+import nira2 from "../../Assets/nirgundhi1.png";
+import cart from "../../Assets/cart.png";
+import wishlist from "../../Assets/wishlist.png";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
+import { addDoc, collection, doc } from "firebase/firestore";
+import { firestore } from "../../Firestore";
+import Usestore from "../Usestore";
 function Produce4() {
-  const [pimage, setpimage] = useState(Aswagandha1);
+  const [pimage, setpimage] = useState(nira1);
   const [info, setinfo] = useState("descryption");
+  const uid = Usestore((state) => state.uid);
+  const [quantity, setquantity] = useState("1");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   function handlemint1() {
-    setpimage(Aswagandha1);
+    setpimage(nira1);
   }
 
   function handlemint2() {
-    setpimage(Aswagandha2);
+    setpimage(nira2);
   }
 
   function handleinfo() {
@@ -29,7 +35,31 @@ function Produce4() {
   function handlereview() {
     setinfo("reviews");
   }
+  function product1cart() {
+    if (uid) {
+      const cartCollectionRef = collection(firestore, "Cart");
+      const userDocRef = doc(cartCollectionRef, uid);
+      const productsCollectionRef = collection(userDocRef, "products");
+      // const productDocRef = doc(productsCollectionRef, "product1");
+      const productData = {
+        name: "Nirgundhi kwath",
+        quantity: quantity, // Directly use the variable here
+        price: 100,
+        details:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae odit voluptate fugit corrupti aliquam, cumque quas expedita impedit, exercitationem facere ducimus voluptas laboriosam maxime vel! Porro quo aperiam quasi ex!",
+        image: nira1,
+      };
 
+      // Add product data to the subcollection "products"
+      addDoc(productsCollectionRef, productData)
+        .then(() => {
+          console.log("Product added to cart successfully!");
+        })
+        .catch((err) => {
+          console.log("Error adding product to cart:", err);
+        });
+    }
+  }
   return (
     <>
       <div className="produce1container">
@@ -38,13 +68,13 @@ function Produce4() {
           <img
             className="mintbutton"
             onClick={handlemint1}
-            src={Aswagandha1}
+            src={nira1}
             alt="mint"
           />
           <img
             className="mintbutton"
             onClick={handlemint2}
-            src={Aswagandha2}
+            src={nira2}
             alt="mint"
           />
         </div>
@@ -57,10 +87,45 @@ function Produce4() {
             ratione eius nesciunt, labore ab ullam cum soluta nam quis. Dolore
             praesentium atque sit.
           </div>
-          <button className="producecart">Add to Cart</button>
+          <button onClick={product1cart} className="producecart">
+            <input
+              style={{
+                height: "30px",
+                fontSize: "18px",
+                width: "40px",
+                paddingLeft: "12px",
+                marginRight: "10px",
+              }}
+              type="number"
+              min={1}
+              max={10}
+              value={quantity}
+              onChange={(e) => {
+                setquantity(e.target.value);
+              }}
+            ></input>{" "}
+            Add to Cart
+          </button>
           <button className="producewishlist">Add to Wishlist</button>
           <div style={{ fontSize: "18px", marginLeft: "10px" }}>Categories</div>
           <div style={{ fontSize: "18px", marginLeft: "10px" }}>Tags</div>
+        </div>
+        <div className="socialbuttons">
+          <abbr title="Cart">
+            {" "}
+            <a href="https://github.com/277pawan">
+              {" "}
+              <img className="social" src={cart} alt="cart" />
+            </a>
+          </abbr>
+
+          <abbr title="Wishlist">
+            {" "}
+            <a href="https://www.linkedin.com/in/pawan-bisht-a943161b9/">
+              {" "}
+              <img className="social" src={wishlist} alt="wishlist" />
+            </a>
+          </abbr>
         </div>
       </div>
       <div className="descryptionbox">
