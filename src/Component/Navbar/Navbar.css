@@ -39,24 +39,26 @@
 #profileBox {
   position: absolute;
   top: 60px;
-  right: 20px;
+  right: 0vw;
   background-color: #edffed;
   padding: 10px 20px 10px 0px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  z-index: 999;
+  z-index: 500;
   width: 350px;
+  display: flex;
+  flex-direction: column;
 }
 
 .profileInfo {
   text-align: center;
 
 }
-
 .profileActions {
   display: flex;
-  justify-content: center;
-  margin-top: 5px 0px 0px 0px;
+  justify-content:flex-end;
+  /* margin-top: 5px 0px 0px 0px; */
+  /* float: left; */
 }
 
 .profileActions button {

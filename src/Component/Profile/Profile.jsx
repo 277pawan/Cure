@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Usestore from "../Usestore";
 import { Link, useNavigate } from "react-router-dom";
 import "./Profile.css";
@@ -19,8 +19,7 @@ function Profile() {
     navigate("/"); // Navigate to the home page after logout
   };
   const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    setSelectedImage(file);
+    setSelectedImage(e.target.files[0]);
   };
 
   return (
@@ -30,32 +29,39 @@ function Profile() {
           <div class="profile-image">
             <img
               src={
-                userName
-                  ? userImage
-                  : selectedImage
+                selectedImage
                   ? selectedImage
+                  : userImage
+                  ? userImage
                   : verstaileimage
               }
               alt="UserImage"
             />
           </div>
-          {userName && (
+          {selectedImage && (
             <input
               id="fileinput"
               type="file"
-              onChange={handleImageChange}
+              onChange={(e) => {
+                setSelectedImage(e.target.files[0]);
+              }}
             ></input>
           )}
           <label for="fileinput" className="filein">
             <img
-              style={{ height: "40px", width: "40px" }}
+              style={{
+                height: "40px",
+                width: "40px",
+                position: "relative",
+                marginTop: "-18px",
+              }}
               src={profilechange}
               alt="profile"
             ></img>
           </label>
-          {selectedImage && (
+          {/* {selectedImage && (
             <button className="upload-button">Upload Image</button>
-          )}
+          )} */}
           <div class="profile-info">
             <h2 class="profile-name">
               UserName={userName ? userName : "John Doe"}

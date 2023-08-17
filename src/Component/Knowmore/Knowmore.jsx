@@ -9,7 +9,7 @@ function Knowmore() {
   const [openSummaryIndex, setOpenSummaryIndex] = useState(0);
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
   const faqData = [
     {
       question: "What about insurance coverage?",

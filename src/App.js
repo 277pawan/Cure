@@ -25,6 +25,7 @@ import Produce4 from './Component/produce4/Produce4';
 import Proplan from './Component/Proplan/Proplan';
 import Cart from './Component/Cart/Cart';
 import Wishlist from './Component/Wishlist/Wishlist';
+import Contact from './Component/Contact/Contact';
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
           <Route path='/Proplan' element={<Proplan />}></Route>
           <Route path='/Cart' element={<Cart />}></Route>
           <Route path='/Wishlist' element={<Wishlist />}></Route>
+          <Route path='/Contact' element={<Contact />}></Route>
 
 
 

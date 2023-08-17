@@ -1,36 +1,49 @@
 import React from "react";
 import "./Footer.css";
-import Linkdin from "../../Assets/Linkdin.png";
-import github from "../../Assets/Github.png";
-import resume from "../../Assets/resumeimage.png";
-
+import github from "../../Assets/github1.png";
+import linkdin from "../../Assets/linkedin1.png";
+import resume from "../../Assets/resume.png";
 function Footer() {
   return (
     <div className="footercontainer">
-      <div className="footbox1">Cure</div>
-      <div className="footbox2">
-        <div>
-          <span>
-            <img className="linkdin" src={Linkdin} alt="linkdin"></img>
-          </span>
-          <span>
-            <img className="github" src={github} alt="github"></img>
-          </span>
-          <span>
-            <img className="resume" src={resume} alt="resume"></img>
-          </span>
+      <div className="footerbox12">
+        <div className="footerbox1">
+          <div className="footertitle">Cure</div>
+          <div className="footerdesc">
+            Cure distributes high-quality medical cannabis. For further detailed
+            information, please log in to the department with your DocCheck
+            account. In the department you will also find important basic
+            information, scientific studies and answers to the most frequently
+            asked questions about cannabinoid-based medicines.
+          </div>
         </div>
-        <br></br>
-        <div className="whatsapp"> What's app(+91) 9068509220</div>
-        <div className="lastline">
-          <a
-            style={{ textDecoration: "none", color: "darkgreen" }}
-            href="/Pawan_bisht-resume.pdf"
-            download
-          >
-            Download My Resume 📂{" "}
-          </a>
-          || Copyright &copy;2023 Cure
+        <div className="footerbox2">
+          <div className="footertitle">Social</div>
+          <div className="footerdesc">
+            {" "}
+            <a href="https://github.com/277pawan">
+              <abbr title="Github">
+                {" "}
+                <img className="social" src={github} alt="github" />
+              </abbr>
+            </a>
+            <a href="https://www.linkedin.com/in/pawan-bisht-a943161b9/">
+              <abbr title="Linkdin">
+                <img className="social" src={linkdin} alt="Linkdin" />
+              </abbr>
+            </a>
+            <a href="/PawanBishtresume.pdf" download>
+              {" "}
+              <abbr title="Resume">
+                <img className="social" src={resume} alt="resume" />
+              </abbr>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="footerbox3">
+        <div className="lastfooterbox">
+          &copy;Copyright 2023, Made by Pawan Bisht.
         </div>
       </div>
     </div>

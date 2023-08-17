@@ -39,7 +39,7 @@ function Wishlist() {
     }
   }
   async function removewishlistitem(docid) {
-    const productDocRef = doc(firestore, "Wishlist", uid, "Products", docid);
+    const productDocRef = doc(firestore, "Wishlist", uid, "products", docid);
     try {
       await deleteDoc(productDocRef);
       setwishlistItems((prevwishlistitem) =>

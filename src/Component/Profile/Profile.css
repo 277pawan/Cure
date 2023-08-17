@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 92vh;
     background-image: linear-gradient(to top right, #eaffdf, #efefef);
   }
   
@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    width: 500px;
+    width: 40%;
     background-color: aliceblue;
     font-family: robto slab;
     border-radius: 10px;
@@ -94,6 +94,11 @@ left: 50px;
 top: -40px;
   }
   @media screen and (max-width:768px) {
+    .userprofilecontainer{
+      margin-top: 60px;;
+      /* margin-left: 45%; */
+  }
+  
     .profile-page {
         display: flex;
         align-items: center;
