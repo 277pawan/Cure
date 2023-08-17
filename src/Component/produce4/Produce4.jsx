@@ -17,6 +17,9 @@ function Produce4() {
   const [info, setinfo] = useState("descryption");
   const uid = Usestore((state) => state.uid);
   const [quantity, setquantity] = useState("1");
+  const [cartmessage, setcartmessage] = useState("");
+  const [wishlistmessage, setwishlistmessage] = useState("");
+  const [loginmessage, setloginmessage] = useState("");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -54,10 +57,19 @@ function Produce4() {
       addDoc(productsCollectionRef, productData)
         .then(() => {
           console.log("Product added to cart successfully!");
+          setcartmessage("Added to cart");
+          setTimeout(() => {
+            setcartmessage("");
+          }, 3000);
         })
         .catch((err) => {
           console.log("Error adding product to cart:", err);
         });
+    } else {
+      setloginmessage("Please! Login in.");
+      setTimeout(() => {
+        setloginmessage("");
+      }, 3000);
     }
   }
   function product1wishlist() {
@@ -78,15 +90,34 @@ function Produce4() {
       addDoc(productsCollectionRef, productData)
         .then(() => {
           console.log("Product added to wishlist successfully!");
+          setwishlistmessage("Added to Wishlist");
+          setTimeout(() => {
+            setwishlistmessage("");
+          }, 3000);
         })
         .catch((err) => {
           console.log("Error adding product to wishlist:", err);
         });
+    } else {
+      setloginmessage("Please! Login in.");
+      setTimeout(() => {
+        setloginmessage("");
+      }, 3000);
     }
   }
   return (
     <>
       <div className="produce1container">
+        {" "}
+        <div className={`sucess ${cartmessage ? "visible" : ""}`}>
+          {cartmessage}
+        </div>
+        <div className={`sucess ${wishlistmessage ? "visible" : ""}`}>
+          {wishlistmessage}
+        </div>
+        <div className={`sucess ${loginmessage ? "visible" : ""}`}>
+          {loginmessage}
+        </div>
         <div className="producebox1">
           <img className="mint1image" src={pimage} alt="mint" />
           <img
