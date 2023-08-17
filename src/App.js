@@ -7,7 +7,7 @@ import Prodslider from './Component/Prodslider/Prodslider';
 import Cannabis from './Component/Cannabis/Cannabis';
 import Footer from "./Component/Footer/Footer";
 import Patient from './Component/Patient/Patient';
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Pharma from './Component/Pharma/Pharma';
 import Doctor from './Component/Doctor/Doctor';
 import Curelife from './Component/Curelife/Curelife';
@@ -57,8 +57,8 @@ function App() {
           <Route path='/Produce3' element={<Produce3 />}></Route>
           <Route path='/Produce4' element={<Produce4 />}></Route>
           <Route path='/Proplan' element={<Proplan />}></Route>
-          <Route path='/Proplan' element={<Cart />}></Route>
-          <Route path='/Proplan' element={<Wishlist />}></Route>
+          <Route path='/Cart' element={<Cart />}></Route>
+          <Route path='/Wishlist' element={<Wishlist />}></Route>
 
 
 
