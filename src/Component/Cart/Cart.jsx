@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { collection, doc, getDocs } from "firebase/firestore";
+import { collection, deleteDoc, doc, getDocs } from "firebase/firestore";
 import { firestore } from "../../Firestore"; // Replace with your Firestore configuration
 import Usestore from "../Usestore";
 import "./Cart.css";
@@ -29,7 +29,7 @@ function Cart() {
 
       const cartItems = [];
       querySnapshot.forEach((doc) => {
-        cartItems.push(doc.data());
+        cartItems.push({ ...doc.data(), id: doc.id }); // Include the doc ID
       });
 
       return cartItems;
@@ -39,23 +39,43 @@ function Cart() {
     }
   }
 
-  // Render your cart items using the cartItems state
+  async function removeFromCart(docId) {
+    const productDocRef = doc(firestore, "Cart", uid, "products", docId);
+
+    try {
+      await deleteDoc(productDocRef);
+      // Update the local cartItems state by filtering out the removed item
+      setCartItems((prevCartItems) =>
+        prevCartItems.filter((item) => item.id !== docId)
+      );
+      console.log("Product removed from cart successfully!");
+    } catch (error) {
+      console.error("Error removing product from cart:", error);
+    }
+  }
+
   return (
-    <div className="cartcontainer">
-      <h1 style={{ paddingLeft: "10px" }}>Your Cart</h1>
-      <ul className="cartfullbox">
-        {cartItems.map((item, index) => (
-          <li className="cartbox" key={index}>
-            <h4>{item.name}</h4> <span>Quantitiy={item.quantity} </span>
-            <span> Price: ${item.price}</span>
-            Details:{item.details} Image:
-            <img className="itemimage" src={item.image} alt="item1"></img>
-            <button style={{ fontSize: "20px", padding: "1px" }}>
-              Remove Cart
-            </button>
-          </li>
+    <div className="cart-container">
+      <h1>Your Cart</h1>
+      <div className="cart-items">
+        {cartItems.map((item) => (
+          <div className="cart-item" key={item.id}>
+            <img className="item-image" src={item.image} alt="item1" />
+            <div className="item-details">
+              <h3>{item.name}</h3>
+              <p>Quantity: {item.quantity}</p>
+              <p>Price: Rs.{item.price}</p>
+              <p>Details: {item.details}</p>
+              <button
+                onClick={() => removeFromCart(item.id)}
+                className="remove-button"
+              >
+                Remove from Cart
+              </button>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

@@ -60,6 +60,30 @@ function Produce4() {
         });
     }
   }
+  function product1wishlist() {
+    if (uid) {
+      const cartCollectionRef = collection(firestore, "Wishlist");
+      const userDocRef = doc(cartCollectionRef, uid);
+      const productsCollectionRef = collection(userDocRef, "products");
+      // const productDocRef = doc(productsCollectionRef, "product1");
+      const productData = {
+        name: "Nirgundhi kwath",
+        price: 100,
+        details:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae odit voluptate fugit corrupti aliquam, cumque quas expedita impedit, exercitationem facere ducimus voluptas laboriosam maxime vel! Porro quo aperiam quasi ex!",
+        image: nira1,
+      };
+
+      // Add product data to the subcollection "products"
+      addDoc(productsCollectionRef, productData)
+        .then(() => {
+          console.log("Product added to wishlist successfully!");
+        })
+        .catch((err) => {
+          console.log("Error adding product to wishlist:", err);
+        });
+    }
+  }
   return (
     <>
       <div className="produce1container">
@@ -106,25 +130,27 @@ function Produce4() {
             ></input>{" "}
             Add to Cart
           </button>
-          <button className="producewishlist">Add to Wishlist</button>
+          <button onClick={product1wishlist} className="producewishlist">
+            Add to Wishlist
+          </button>
           <div style={{ fontSize: "18px", marginLeft: "10px" }}>Categories</div>
           <div style={{ fontSize: "18px", marginLeft: "10px" }}>Tags</div>
         </div>
         <div className="socialbuttons">
           <abbr title="Cart">
             {" "}
-            <a href="https://github.com/277pawan">
+            <Link to="/Cart">
               {" "}
               <img className="social" src={cart} alt="cart" />
-            </a>
+            </Link>
           </abbr>
 
           <abbr title="Wishlist">
             {" "}
-            <a href="https://www.linkedin.com/in/pawan-bisht-a943161b9/">
+            <Link to="/Wishlist">
               {" "}
               <img className="social" src={wishlist} alt="wishlist" />
-            </a>
+            </Link>
           </abbr>
         </div>
       </div>
