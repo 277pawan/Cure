@@ -118,7 +118,7 @@ function Produce2() {
                 height: "30px",
                 fontSize: "18px",
                 width: "40px",
-                paddingLeft: "8px",
+                padding: "10px 10px 10px 5px",
                 marginRight: "10px",
               }}
               type="number"

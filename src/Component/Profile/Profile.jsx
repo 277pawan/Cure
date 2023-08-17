@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Usestore from "../Usestore";
 import { Link, useNavigate } from "react-router-dom";
 import "./Profile.css";
@@ -15,12 +15,12 @@ function Profile() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleLogout = () => {
-    logoutfunction(); // Call the logout function from your store or auth provider
+    logoutfunction();
     navigate("/"); // Navigate to the home page after logout
   };
-  const handleImageChange = (e) => {
-    setSelectedImage(e.target.files[0]);
-  };
+  // const handleImageChange = (e) => {
+  //   setSelectedImage(e.target.files[0]);
+  // };
 
   return (
     <div className="userprofilecontainer">

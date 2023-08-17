@@ -5,7 +5,7 @@ import mint2 from "../../Assets/mint2.png";
 import pro2 from "../../Assets/gotukola2.png";
 import pro3 from "../../Assets/Aswagandha2.png";
 import pro4 from "../../Assets/nirgundhi1.png";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import cart from "../../Assets/cart.png";
 import wishlist from "../../Assets/wishlist.png";
@@ -17,6 +17,9 @@ function Produce1() {
   const [info, setinfo] = useState("descryption");
   const uid = Usestore((state) => state.uid);
   const [quantity, setquantity] = useState("1");
+  const [cartmessage, setcartmessage] = useState("");
+  const [wishlistmessage, setwishlistmessage] = useState("");
+  const [loginmessage, setloginmessage] = useState("");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -54,10 +57,19 @@ function Produce1() {
       addDoc(productsCollectionRef, productData)
         .then(() => {
           console.log("Product added to cart successfully!");
+          setcartmessage("Added to cart");
+          setTimeout(() => {
+            setcartmessage("");
+          }, 3000);
         })
         .catch((err) => {
           console.log("Error adding product to cart:", err);
         });
+    } else {
+      setloginmessage("Please! Login in.");
+      setTimeout(() => {
+        setloginmessage("");
+      }, 3000);
     }
   }
   function product1wishlist() {
@@ -78,16 +90,34 @@ function Produce1() {
       addDoc(productsCollectionRef, productData)
         .then(() => {
           console.log("Product added to wishlist successfully!");
+          setwishlistmessage("Added to Wishlist");
+          setTimeout(() => {
+            setwishlistmessage("");
+          }, 3000);
         })
         .catch((err) => {
           console.log("Error adding product to wishlist:", err);
         });
+    } else {
+      setloginmessage("Please! Login in.");
+      setTimeout(() => {
+        setloginmessage("");
+      }, 3000);
     }
   }
 
   return (
     <>
       <div className="produce1container">
+        <div className={`sucess ${cartmessage ? "visible" : ""}`}>
+          {cartmessage}
+        </div>
+        <div className={`sucess ${wishlistmessage ? "visible" : ""}`}>
+          {wishlistmessage}
+        </div>
+        <div className={`sucess ${loginmessage ? "visible" : ""}`}>
+          {loginmessage}
+        </div>
         <div className="producebox1">
           <img className="mint1image" src={pimage} alt="mint" />
           <img
@@ -118,7 +148,7 @@ function Produce1() {
                 height: "30px",
                 fontSize: "18px",
                 width: "40px",
-                paddingLeft: "8px",
+                padding: "10px 10px 10px 5px",
                 marginRight: "10px",
               }}
               type="number"

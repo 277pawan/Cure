@@ -10,7 +10,25 @@
   padding: 40px;
   background: linear-gradient(to right, #edffed, #e2fce2, #eaffdf);
 }
-
+.sucess {
+  position: fixed;
+  top: 20%;
+  left:50%;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+  padding: 22px;
+  background-color: #332e2e;
+  border:2px solid inset gray;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  opacity: 0;
+}
+.sucess.visible {
+  display: block; 
+  opacity: 1;
+}
 .producebox1 {
   height: 600px;
   width: 600px;
@@ -24,11 +42,12 @@
   width: 65px;
   cursor: pointer;
   background-color: #eaffdf;
-  box-shadow: 0 5px 15px 10px rgba(153, 19, 19, 0.15);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 10px rgba(69, 107, 74, 0.15);
 }
 .social{
   height: 60px;
-  padding-top: 10px;
+  padding: 10px 0px 0px 10px;
   transition: transform 0.3s;
   cursor: pointer;
 }
