@@ -179,7 +179,6 @@ function Doctor() {
               value={time}
             ></input>
           </div>
-          {time}
           <div>
             <input
               className="whyemail"

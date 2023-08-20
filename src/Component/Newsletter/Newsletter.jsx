@@ -46,17 +46,7 @@ function Newsletter() {
           value={email}
           required
         ></input>
-        <button
-          onClick={submitnews}
-          style={{
-            height: "70px",
-            width: "100px",
-            color: "green",
-            backgroundColor: "#e0ffdf",
-            fontSize: "20px",
-            border: "2px solid transparent",
-          }}
-        >
+        <button onClick={submitnews} className="submitnewsbutton">
           Send
         </button>
         <div className="newslettererror">{err}</div>{" "}

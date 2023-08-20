@@ -1,150 +1,93 @@
-/* Prodslider.css */
-
+/* Prodslider Container */
 .proslidercontainer {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 500px;
-  box-sizing: border-box;
-  background-color: rgb(3, 43, 3);
-  padding: 20px; /* Add some padding to create space between elements */
-}
-
-.carousel {
-  z-index: 4;
-  float: right;
+  align-items: center;
+  background-color: #f5f5f5;
   border-radius: 10px;
-  margin: 10px 0px 0px -850px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.carousel .carousel .control-dots .dot {
-  /* Add your desired color value for the indicators here */
-  background-color: #37ff00; /* For example, changing to red color */
-  border: 2px solid #135905; /* Optional: Add border for the indicators */
-}
-
-.carousel .carousel .control-dots .dot.selected {
-  /* Add your desired color value for the selected indicator here */
-  background-color: #008000; /* For example, changing to green color */
-  border: 2px solid #0f910f; /* Optional: Add border for the selected indicator */
-}
-
-.proimage2 {
-  height: 450px;
-  width: auto;
-}
-
-.proimage3 {
-  height: 450px;
-  width: auto;
-}
-
-.proimage4 {
-  height: 450px;
-  width: auto;
-}
-
-.proheading {
-  z-index: 7;
-  height: 450px;
-  width: 800px;
-  border-radius: 10px;
+/* Content Container */
+.procontent {
+  flex: 1;
+  padding: 40px;
+  background-color: #222;
   color: white;
-  text-align: center;
-  margin: 10px 0px 0px 20px;
-  font-size: 40px;
-  font-family: visper libre;
+  height: 500px;
+  border-radius: 10px 0 0 10px;
 }
 
+/* Product Heading */
+.proheading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Product Description */
+.prodescription {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Product Button */
 .prosliderbutton {
-  height: 60px;
-  width: 200px;
-  font-size: 25px;
-  font-family: domine;
-  margin-top: 3%;
-  border: 2px solid rgb(11, 135, 0);
-  background-color: #206035;
-  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 20px;
+  background-color: #236825;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .prosliderbutton:hover {
-  background-color: rgb(4, 37, 4);
-  color: rgb(255, 255, 255);
+  background-color: #0a530d;
 }
 
-.prohr {
-  width: 97%;
+/* Carousel */
+.carousel {
+  width: 40%;
+  max-height: 500px;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+/* Carousel Images */
+.proimage {
+  width: 100%;
+  height: 500px;
+}
+
+/* Legends */
+.legend {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Additional responsive styles */
+@media (max-width: 768px) {
   .proslidercontainer {
-    height: auto;
-    width: 100%;
-    padding: 10px; 
+    flex-direction: column;
+  }
+
+  .procontent {
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0;
+    text-align: center;
   }
 
   .carousel {
-    width:1000px; 
-    margin: 20px 0px 0px -600px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .carousel .slider-wrapper {
     width: 100%;
-  }
-
-  .carousel .slider {
-    width: 100%;
-  }
-
-  .proimage2 {
-    height: auto;
-    max-height: 300px; 
-    width: 100%; 
-  }
-  
-  .proimage3 {
-    height: auto;
-    max-height: 300px; 
-    width: 100%; 
-  }
-  
-  .proimage4 {
-    height: auto;
-    max-height: 300px; 
-    width: 100%; 
-  }
-
-  .proheading {
-    height: auto;
-    width: 100%;
-    margin: 20px 0;
-    font-size: 28px;
-  }
-
-  .prosliderbutton {
-    width: 160px;
-    font-size: 20px;
+    max-width: 300px;
     margin-top: 20px;
-  }
-}
-@media screen and (max-width:395px) {
-  .carousel {
-    width:945px; 
-    /* max-width: 700px; */
-  margin: 20px 0px 0px -573px;
-  display: flex;
-  justify-content: center;
-  }
-}
-@media screen and (max-width: 360px) {
-  .carousel {
-    width:890px; 
-    /* max-width: 700px; */
-  margin: 20px 0px 0px -540px;
-  display: flex;
-  justify-content: center;
+    display: none;
   }
 }

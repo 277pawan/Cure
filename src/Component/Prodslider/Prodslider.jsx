@@ -40,20 +40,12 @@ function Prodslider() {
 
   return (
     <div className="proslidercontainer" ref={proref}>
-      {/* <input type="color"></input> */}
-      <div className="proheading">
-        Products Insight
-        <hr className="prohr"></hr>
-        <div
-          style={{
-            fontFamily: "lobster",
-            fontSize: "28px",
-            color: "white",
-            margin: "10px 0px 10px 10px",
-            alignItems: "center",
-            textAlign: "center",
-          }}
-        >
+      <div className="procontent">
+        <div className="proheading">
+          Products Insight
+          <hr className="prohr" />
+        </div>
+        <div className="prodescription">
           Cure distributes high-quality medical cannabis. For further detailed
           information, please log in to the department with your DocCheck
           account.
@@ -79,23 +71,23 @@ function Prodslider() {
           centerMode={false}
           centerSlidePercentage={80}
           showIndicators={true}
-          width="40%"
+          width="100%"
           emulateTouch={true}
         >
           <div>
-            <img className="proimage2" src={image5} alt="product1" />
+            <img className="proimage" src={image5} alt="product1" />
             <p className="legend">Legend 1</p>
           </div>
           <div>
-            <img className="proimage3" src={image6} alt="product2" />
+            <img className="proimage" src={image6} alt="product2" />
             <p className="legend">Legend 2</p>
           </div>
           <div>
-            <img className="proimage4" src={image7} alt="product3" />
+            <img className="proimage" src={image7} alt="product3" />
             <p className="legend">Legend 3</p>
           </div>
           <div>
-            <img className="proimage4" src={image8} alt="product4" />
+            <img className="proimage" src={image8} alt="product4" />
             <p className="legend">Legend 4</p>
           </div>
         </Carousel>{" "}

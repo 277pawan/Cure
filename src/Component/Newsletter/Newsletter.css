@@ -11,17 +11,13 @@
 .newsbox1{
     margin: 10px 0px 10px 0px;
     height: 520px;
-    width: 500px;
+    width: 600px;
     background-color: #ade5ab;
 }
 .image21
 {
     height: 300px;
-    width: 500px;
-    position: relative;
-    top:5%;
-right: 20%;
-
+    width: 600px;
 }
 .newsbox1heading{
     text-align: center;
@@ -61,7 +57,7 @@ right: 20%;
     height: 70px;
     width: 350px;
     font-family: lolita one;
-    /* border-radius: 8px; */
+    border-radius: 0px;
     color: black;
     background-color: #e0ffdf;
     border:2px solid transparent;
@@ -73,10 +69,27 @@ right: 20%;
     color: red;
     margin-left: 12%;
 }
+.submitnewsbutton{
+    position: relative;
+    top:-0.8%;
+    border-radius: 0px;
+    border: none;
+    height: 70px;
+    padding: 10px;
+    color: black;
+    background-color: #e0ffdf;
+    font-size: 20px;
+}
 @media screen and (max-width:768px) {
     .newsbox1{
-        height: 590px;
+        height: auto;
         width: 100%;
+        background-color: #ade5ab;
+    }
+    .newsbox2{
+        margin: 10px 0px 10px 0px;
+        height: auto;
+        width: 600px;
         background-color: #ade5ab;
     }
     .image21
@@ -96,7 +109,6 @@ right: 20%;
     height: 70px;
     width: 200px;
     font-family: lolita one;
-    /* border-radius: 8px; */
     color: black;
     background-color: #e0ffdf;
     border:2px solid transparent;
