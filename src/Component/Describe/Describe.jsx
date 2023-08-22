@@ -45,9 +45,17 @@ function Describe() {
           with medical cannabis.
         </div>
         <br></br>
-        <Link to="/Patient">
-          <button className="boxbutton">Learn more </button>
-        </Link>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Link to="/Patient">
+            <button className="boxbutton">Learn more </button>
+          </Link>
+        </div>
       </div>
       <div className="box2">
         <div className="boxheading">For Doctors</div>
@@ -60,10 +68,18 @@ function Describe() {
           the quality of life. Inform yourself comprehensively about therapy
           with medical cannabis.
         </div>
-        <br></br>
-        <Link to="/Doctor">
-          <button className="boxbutton">Learn more </button>
-        </Link>
+        <br></br>{" "}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Link to="/Doctor">
+            <button className="boxbutton">Learn more </button>
+          </Link>
+        </div>
       </div>
       <div className="box3">
         {" "}
@@ -78,9 +94,17 @@ function Describe() {
           with medical cannabis.
         </div>
         <br></br>
-        <Link to="/Pharma">
-          <button className="boxbutton">Learn more </button>
-        </Link>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Link to="/Pharma">
+            <button className="boxbutton">Learn more </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

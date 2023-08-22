@@ -38,13 +38,12 @@
     background-color: #206035;
     color: #ffffff;
     font-size: 20px;
+    width: 150px;
     font-family: domine;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 35%;
-    margin-top: 15px;
 }
     
 .boxbutton:hover {
@@ -56,8 +55,6 @@
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 35%;
-    margin-top: 15px;
 }
   .in-view{
     animation: intersect 1s ease-in-out;
@@ -101,8 +98,6 @@
       padding: 10px 20px;
       border-radius: 5px;
       cursor: pointer;
-      margin-left: 24%;
-      margin-top: 15px;
   }
       
   .boxbutton:hover {
@@ -114,8 +109,7 @@
       padding: 10px 20px;
       border-radius: 5px;
       cursor: pointer;
-      margin-left: 24%;
-      margin-top: 15px;
+
   }
   }
   
