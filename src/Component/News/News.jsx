@@ -12,10 +12,11 @@ function News() {
           "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=6ff06d8ce7424c81814eab28fe975e61"
         );
         const data = await response.json();
+        console.log("fetched the data");
         setdata(data.articles);
         setLoading(false);
       } catch (err) {
-        console.log(err);
+        console.log("error in fetching the data=", err);
         setLoading(false);
       }
     }

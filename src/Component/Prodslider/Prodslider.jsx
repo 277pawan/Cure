@@ -76,19 +76,19 @@ function Prodslider() {
         >
           <div>
             <img className="proimage" src={image5} alt="product1" />
-            <p className="legend">Legend 1</p>
+            <p className="legend">Mint Leaves.</p>
           </div>
           <div>
             <img className="proimage" src={image6} alt="product2" />
-            <p className="legend">Legend 2</p>
+            <p className="legend">Aswagandha.</p>
           </div>
           <div>
             <img className="proimage" src={image7} alt="product3" />
-            <p className="legend">Legend 3</p>
+            <p className="legend">Nirgundhi.</p>
           </div>
           <div>
             <img className="proimage" src={image8} alt="product4" />
-            <p className="legend">Legend 4</p>
+            <p className="legend">Gotu Kola.</p>
           </div>
         </Carousel>{" "}
       </div>

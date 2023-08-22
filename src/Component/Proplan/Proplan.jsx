@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Proplan.css";
 
 function Proplan() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="proplancontainer">
       <div className="probox">
@@ -33,7 +36,12 @@ function Proplan() {
         </div>
         <div className="default">
           <button>
-            <a href="https://buy.stripe.com/eVafZ4dwM9jz6ju4gg">Buy Now</a>
+            <a
+              style={{ textDecoration: "none", color: "white" }}
+              href="https://buy.stripe.com/eVafZ4dwM9jz6ju4gg"
+            >
+              Buy Now
+            </a>
           </button>
         </div>
       </div>
