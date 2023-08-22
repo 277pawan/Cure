@@ -30,7 +30,7 @@ function News() {
         <div className="spinner-container">
           <div className="spinner"></div>
         </div>
-      ) : (
+      ) : Array.isArray(data) && data.length > 0 ? (
         data.map((article, index) => (
           <div key={index} className="article">
             <h2>{article.title}</h2>
@@ -47,6 +47,8 @@ function News() {
             </a>
           </div>
         ))
+      ) : (
+        <p>No news articles available.</p>
       )}
     </div>
   );
