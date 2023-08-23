@@ -54,12 +54,20 @@ function Patient() {
           <div className="patientbox1">
             <img className="image14" src={image14} alt="image14"></img>
             <div className="imagebox1">
-              <button className="patientbutton1">Explore it.</button>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <button className="patientbutton1">Explore it.</button>
+              </div>
               <div className="imagebox1heading">
                 What is the best direction to sleep
               </div>
               <div className="imagebox1descrpt">
-                Ayurveda’s Triad of Health includes aahar (diet), vihar
+                Ayurveda’s Trial of Health includes aahar (diet), vihar
                 (balanced...
               </div>
             </div>
@@ -67,7 +75,15 @@ function Patient() {
           <div className="patientbox2">
             <img className="image15" src={image15} alt="image14"></img>
             <div className="imagebox2">
-              <button className="patientbutton1">Explore it.</button>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <button className="patientbutton1">Explore it.</button>
+              </div>
               <div className="imagebox2heading">
                 How to keep your eyes healthy and strong.
               </div>
@@ -98,6 +114,7 @@ function Patient() {
               exact
               to="/Proplan"
             >
+              {" "}
               <div className="patientlogin">Explore Pro Plan.</div>
             </Link>
           )}

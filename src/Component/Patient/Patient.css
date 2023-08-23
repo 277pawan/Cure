@@ -60,7 +60,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: -10%;
-    margin-left: 28%;
+    /* margin-left: 28%; */
 }
     
 .patientbutton1:hover {
@@ -74,7 +74,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: -10%;
-    margin-left: 28%;
+    /* margin-left: 28%; */
 }
 .aurvedhaheading{
     font-size: 80px;
@@ -171,9 +171,7 @@
     width:350px;
     background-color:#e0ffcf;
     border-radius: 10px;
-    box-shadow:  -8px 8px 0px #3e5944,
-    2px -2px 16px #749a73;
-
+    box-shadow: 0px 4px 10px #3e5944, 4px 0px 12px #749a73;
   }
   .imagebox2:hover{
     position: relative;
@@ -183,8 +181,7 @@
     width:350px;
     background-color:#e0ffcf;
     border-radius: 10px;
-    box-shadow:  -8px 8px 0px #3e5944,
-    2px -2px 16px #749a73;
+    box-shadow: 0px 4px 10px #3e5944, 4px 0px 12px #749a73;
 
   }
   .imagebox3:hover{
@@ -195,8 +192,7 @@
     width:350px;
     background-color:#e0ffcf;
     border-radius: 10px;
-    box-shadow:  -8px 8px 0px #3e5944,
-    2px -2px 16px #749a73;
+    box-shadow: 0px 4px 10px #3e5944, 4px 0px 12px #749a73;
 
   }
   .imagebox4:hover{
@@ -207,8 +203,7 @@
     width:350px;
     background-color:#e0ffcf;
     border-radius: 10px;
-    box-shadow:  -8px 8px 0px #3e5944,
-    2px -2px 16px #749a73;
+    box-shadow: 0px 4px 10px #3e5944, 4px 0px 12px #749a73;
 }
   
   .imagebox1heading,
@@ -239,7 +234,8 @@ text-align: center;
     font-family: lobster;
     text-align: center;
     padding-top: 10px;
-    width:500px;
+    width:40vw;                                                                                                                                                                                                                                                                                                                                                                                   
+    margin: 10px;
     font-size: 40px;
     text-decoration: none;
 color:white;
@@ -272,6 +268,39 @@ color:white;
     font-size: 40px;
     font-family: visper libre;
     
+}
+.patientbox1
+{
+  /* margin: 20px; */
+  height: 500px;
+  width: 100%;
+
+  background-color: #e0ffcf;
+  border-radius: 10px;
+}
+.patientbox2
+{
+  /* margin: 20px; */
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #e0ffcf;
+}
+.patientbox3
+{
+  height: 500px;
+  /* margin: 20px; */
+  width: 100%;
+  border-radius: 10px;
+  background-color: #e0ffcf;
+}
+.patientbox4
+{
+  height: 500px;
+  margin: 20px;
+  width: 100%;
+  border-radius: 10px;
+      background-color:#e0ffcf;
 }
 .patientheading > div{
     font-weight: 600;
@@ -331,7 +360,7 @@ text-align: center;
   .image16,
   .image17{
     height:300px;
-    width: 100vw;
+    width: 100%;
     border-radius: 10px;
   }
   .imagebox1,
@@ -339,65 +368,77 @@ text-align: center;
   .imagebox3,
   .imagebox4{
     position: relative;
-    left: 7%;
+    left: 0%;
     top:-7%;
     height: 230px;
-    width:350px;
+    width:100%;
     background-color:#e0ffcf;
     border-radius: 10px;
     transition-property: box-shadow;
     transition-duration: 1s;
-    /* box-shadow: inset 5px -5px 19px #89b492,
-    inset -5px 5px 19px #97c591; */
   }
   .imagebox1:hover{
     position: relative;
-    left: 7%;
+    left: 0%;
     top:-7%;
     height: 230px;
-    width:350px;
+    width:100%;
     background-color:#e0ffcf;
     border-radius: 10px;
-    box-shadow:  -8px 8px 0px #3e5944,
-    2px -2px 16px #749a73;
+    box-shadow: 0px 4px 10px #3e5944, 4px 0px 12px #749a73;
 
   }
   .imagebox2:hover{
     position: relative;
-    left: 7%;
+    left: 0%;
     top:-7%;
     height: 230px;
-    width:350px;
+    width:100%;
     background-color:#e0ffcf;
     border-radius: 10px;
-    box-shadow:  -8px 8px 0px #3e5944,
-    2px -2px 16px #749a73;
+    box-shadow: 0px 4px 10px #3e5944, 4px 0px 12px #749a73;
 
   }
   .imagebox3:hover{
     position: relative;
-    left: 7%;
+    left: 0%;
     top:-7%;
     height: 230px;
-    width:350px;
+    width:100%;
     background-color:#e0ffcf;
     border-radius: 10px;
-    box-shadow:  -8px 8px 0px #3e5944,
-    2px -2px 16px #749a73;
+    box-shadow: 0px 4px 10px #3e5944, 4px 0px 12px #749a73;
 
   }
   .imagebox4:hover{
     position: relative;
-    left: 7%;
+    left: 0%;
     top:-7%;
     height: 230px;
-    width:350px;
+    width:100%;
     background-color:#e0ffcf;
     border-radius: 10px;
-    box-shadow:  -8px 8px 0px #3e5944,
-    2px -2px 16px #749a73;
+    box-shadow: 0px 4px 10px #3e5944, 4px 0px 12px #749a73;
 }
-  
+ 
+.patientlogin{
+  height: auto;
+  text-decoration: none;
+  border-bottom: none;
+  border-radius: 10px;
+  font-family: lobster;
+  text-align: center;
+  padding-top: 10px;
+  width:60vw;                                                                                                                                                                                                                                                                                                                                                                                   
+  margin: 10px;
+  font-size: 40px;
+  text-decoration: none;
+color:white;
+  background-color: #3e5944;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
   }
   @media screen and (max-width:360px) {
     .imagebox1,
@@ -405,63 +446,55 @@ text-align: center;
     .imagebox3,
     .imagebox4{
       position: relative;
-      left: 1.5%;
+      left: 0%;
       top:-7%;
       height: 230px;
-      width:350px;
+      width:100%;
       background-color:#e0ffcf;
       border-radius: 10px;
       transition-property: box-shadow;
       transition-duration: 1s;
-      /* box-shadow: inset 5px -5px 19px #89b492,
-      inset -5px 5px 19px #97c591; */
     }
     .imagebox1:hover{
       position: relative;
-      left: 1.5%;
+      left: 0%;
       top:-7%;
       height: 230px;
-      width:350px;
+      width:100%;
       background-color:#e0ffcf;
       border-radius: 10px;
-      box-shadow:  -8px 8px 0px #3e5944,
-      2px -2px 16px #749a73;
+      box-shadow: 0px 4px 10px #3e5944, 4px 0px 12px #749a73;
   
     }
     .imagebox2:hover{
       position: relative;
-      left: 1.5%;
+      left: 0%;
       top:-7%;
       height: 230px;
-      width:350px;
+      width:100%;
       background-color:#e0ffcf;
       border-radius: 10px;
-      box-shadow:  -8px 8px 0px #3e5944,
-      2px -2px 16px #749a73;
-  
+      box-shadow: 0px 4px 10px #3e5944, 4px 0px 12px #749a73;
     }
     .imagebox3:hover{
       position: relative;
-      left: 1.5%;
+      left: 0%;
       top:-7%;
       height: 230px;
-      width:350px;
+      width:100%;
       background-color:#e0ffcf;
       border-radius: 10px;
-      box-shadow:  -8px 8px 0px #3e5944,
-      2px -2px 16px #749a73;
+      box-shadow: 0px 4px 10px #3e5944, 4px 0px 12px #749a73;
   
     }
     .imagebox4:hover{
       position: relative;
-      left: 1.5%;
+      left: 0%;
       top:-7%;
       height: 230px;
-      width:350px;
+      width:100%;
       background-color:#e0ffcf;
       border-radius: 10px;
-      box-shadow:  -8px 8px 0px #3e5944,
-      2px -2px 16px #749a73;
+      box-shadow: 0px 4px 10px #3e5944, 4px 0px 12px #749a73;
   }
-    
   }
