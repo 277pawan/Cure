@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import verstaile from "../../Assets/verstaileimage.png";
 import hamsopen from "../../Assets/Hamburg.png";
@@ -15,14 +15,31 @@ function Navbar() {
   const uid = Usestore((state) => state.uid);
   const navigateprofile = useNavigate();
   const navigatelogin = useNavigate();
-
+  const navigate = useNavigate();
   function hamburghandle() {
     sethamimagevisible(!hamimagevisible);
+    navigate({
+      ...window.location,
+      state: { ...window.history.state, hamburgerOpen: !hamimagevisible },
+    });
   }
 
   function handleVerstaileImageClick() {
     setProfileBoxVisible(!profileBoxVisible);
+    navigate({
+      ...window.location,
+      state: { ...window.history.state, profileBoxOpen: !profileBoxVisible },
+    });
   }
+  useEffect(() => {
+    const locationState = window.history.state || {};
+    if (locationState.hamburgerOpen !== undefined) {
+      sethamimagevisible(!locationState.hamburgerOpen);
+    }
+    if (locationState.profileBoxOpen !== undefined) {
+      setProfileBoxVisible(!locationState.profileBoxOpen);
+    }
+  }, []);
   const handleprofilebox = () => {
     setProfileBoxVisible(!profileBoxVisible);
     navigateprofile("/Profile");
