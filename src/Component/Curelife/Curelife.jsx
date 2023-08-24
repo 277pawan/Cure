@@ -54,10 +54,18 @@ function Curelife() {
         <div className="curelifeamaze">
           Take a look at the amazing features & ask yourself the question.
         </div>
-        <Link to="/Knowmore">
-          {" "}
-          <button className="curelifebutton">Know More</button>
-        </Link>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Link to="/Knowmore">
+            {" "}
+            <button className="curelifebutton">Know More</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

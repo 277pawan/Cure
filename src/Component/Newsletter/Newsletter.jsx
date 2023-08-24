@@ -38,17 +38,25 @@ function Newsletter() {
           Get all the latest news and offers we provide along with the special
           discounts we offer you!
         </div>
-        <input
-          className="newsletteremail"
-          onChange={(e) => setemail(e.target.value)}
-          type="email"
-          placeholder="Enter your email..."
-          value={email}
-          required
-        ></input>
-        <button onClick={submitnews} className="submitnewsbutton">
-          Send
-        </button>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <input
+            className="newsletteremail"
+            onChange={(e) => setemail(e.target.value)}
+            type="email"
+            placeholder="Enter your email..."
+            value={email}
+            required
+          ></input>
+          <button onClick={submitnews} className="submitnewsbutton">
+            Send
+          </button>
+        </div>
         <div className="newslettererror">{err}</div>{" "}
       </div>
     </div>
