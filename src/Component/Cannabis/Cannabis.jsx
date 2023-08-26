@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Cannabis.css";
 import image10 from "../../Assets/image10.png";
 import image11 from "../../Assets/image11.png";
+import { Link } from "react-router-dom";
 
 function Cannabis() {
   const [isintersecting, setintersection] = useState(false);
@@ -52,7 +53,10 @@ function Cannabis() {
           cannabis, we would like to make our contribution to ensuring safe and
           sustainable therapy.
         </div>
-        <button className="cannbutton">To The Shop</button>
+        <Link to="/Shop">
+          {" "}
+          <button className="cannbutton">To The Shop</button>
+        </Link>
       </div>
     </div>
   );

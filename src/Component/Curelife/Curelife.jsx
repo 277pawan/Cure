@@ -39,7 +39,7 @@ function Curelife() {
       <div className="curelifebox1">
         <div className="curelifeheading">
           Your Life of Ayurvedha with <br></br>
-          <span className="spancure"> Cure</span>
+          <span className="spancure"> Cure.</span>
         </div>
         <div className="curelifedescryption">
           Life with Ayurveda is a holistic journey towards balance and

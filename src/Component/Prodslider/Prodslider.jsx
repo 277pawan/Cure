@@ -7,6 +7,7 @@ import image7 from "../../Assets/image7.png";
 import image8 from "../../Assets/image8.png";
 
 import "./Prodslider.css";
+import { Link } from "react-router-dom";
 function Prodslider() {
   const [isintersecting, setintersection] = useState(false);
   const proref = useRef(null);
@@ -55,7 +56,10 @@ function Prodslider() {
           scientific studies and answers to the most frequently asked questions
           about cannabinoid-based medicines.
         </div>
-        <button className="prosliderbutton">To The Shop</button>
+        <Link to="/Shop">
+          {" "}
+          <button className="prosliderbutton">To The Shop</button>
+        </Link>
       </div>
       <div className="carousel">
         <Carousel
