@@ -48,18 +48,7 @@ function Navbar() {
     setProfileBoxVisible(!profileBoxVisible);
     navigatelogin("/Login");
   };
-  function insightscroll() {
-    window.scrollTo({
-      top: 2020,
-      behavior: "smooth",
-    });
-  }
-  function productscroll() {
-    window.scrollTo({
-      top: 1100,
-      behavior: "smooth",
-    });
-  }
+
   return (
     <div className="navbarcontainer">
       <ul className="mobileul">
@@ -73,11 +62,44 @@ function Navbar() {
           ></img>
           {!hamimagevisible && (
             <div id="hamsburgbox">
-              <span className="hamsburgli">Home</span>
-              <span className="hamsburgli">Products</span>
-              <span className="hamsburgli">Insights</span>
-              <span className="hamsburgli">Contact</span>
-              <span className="hamsburgli">About</span>
+              <Link style={{ color: "black", textDecoration: "none" }} to="/">
+                {" "}
+                <span onClick={hamburghandle} className="hamsburgli">
+                  Home
+                </span>
+              </Link>
+              <Link
+                style={{ color: "black", textDecoration: "none" }}
+                to="/Shop"
+              >
+                <span onClick={hamburghandle} className="hamsburgli">
+                  Products
+                </span>
+              </Link>
+              <Link
+                style={{ color: "black", textDecoration: "none" }}
+                to="/Knowmore"
+              >
+                <span onClick={hamburghandle} className="hamsburgli">
+                  Insights
+                </span>
+              </Link>
+              <Link
+                style={{ color: "black", textDecoration: "none" }}
+                to="/Contact"
+              >
+                {" "}
+                <span onClick={hamburghandle} className="hamsburgli">
+                  Contact
+                </span>
+              </Link>
+              <span
+                style={{ color: "black", textDecoration: "none" }}
+                onClick={hamburghandle}
+                className="hamsburgli"
+              >
+                About
+              </span>
             </div>
           )}
         </li>
@@ -171,16 +193,29 @@ function Navbar() {
           )}
         </li>
         <Link to="/Contact">
-          <li style={{ color: "black" }} className="windowli">
+          <li
+            style={{ color: "black", textDecoration: "none" }}
+            className="windowli"
+          >
             Contact
           </li>
         </Link>
-        <li onClick={insightscroll} className="windowli">
-          Insights
-        </li>
-        <li onClick={productscroll} className="windowli">
-          Products
-        </li>
+        <Link to="/Knowmore">
+          <li
+            style={{ color: "black", textDecoration: "none" }}
+            className="windowli"
+          >
+            Insights
+          </li>
+        </Link>
+        <Link to="/Shop">
+          <li
+            style={{ color: "black", textDecoration: "none" }}
+            className="windowli"
+          >
+            Products
+          </li>
+        </Link>
         <Link to="/">
           {" "}
           <li style={{ color: "black" }} className="windowli">
