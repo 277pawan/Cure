@@ -9,7 +9,7 @@ function News() {
     async function fetchNews() {
       try {
         const response = await fetch(
-          "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=6ff06d8ce7424c81814eab28fe975e61"
+          "https://newsapi.org/v2/everything?q=tesla&from=2023-08-22&sortBy=publishedAt&apiKey=6ff06d8ce7424c81814eab28fe975e61"
         );
         const data = await response.json();
         console.log("fetched the data");
