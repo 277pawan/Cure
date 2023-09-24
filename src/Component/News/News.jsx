@@ -8,11 +8,10 @@ function News() {
   useEffect(() => {
     async function fetchNews() {
       try {
-        const response = await fetch(
-          "https://newsapi.org/v2/everything?q=tesla&from=2023-08-24&sortBy=publishedAt&apiKey=6ff06d8ce7424c81814eab28fe975e61"
-        );
+        const response = await fetch("https://dummyjson.com/products");
         const data = await response.json();
-        setdata(data.articles);
+        setdata(data.products);
+        console.log(data);
         setLoading(false);
       } catch (err) {
         setLoading(false);
@@ -31,13 +30,13 @@ function News() {
       ) : Array.isArray(data) && data.length > 0 ? (
         data.map((article, index) => (
           <div key={index} className="article">
-            <h2>{article.title}</h2>
-            {article.author && <p>Author: {article.author}</p>}
+            <h2>{article.brand}</h2>
+            {article.category && <p>Author: {article.category}</p>}
             <p>{article.description}</p>
-            <img src={article.urlToImage} alt={article.title} />
+            <img src={article.images[0]} alt={article.price} />
             <a
               className="anchor"
-              href={article.url}
+              href={article.thumbnail}
               target="_blank"
               rel="noopener noreferrer"
             >
