@@ -7,6 +7,7 @@ function News() {
   const [count, setcounter] = useState(1);
   const [disp, setprev] = useState(true);
   const [next, setnext] = useState(true);
+  const [loadingicon, setloadingicon] = useState(false);
 
   useEffect(() => {
     async function fetchNews() {
@@ -16,8 +17,10 @@ function News() {
         setdata(data.products);
         console.log(data);
         setLoading(false);
+        setloadingicon(true);
       } catch (err) {
         setLoading(false);
+        setloadingicon(false);
       }
     }
 
@@ -65,29 +68,33 @@ function News() {
           <p>No news articles available.</p>
         )}
       </div>
-      <div className="pagination">
-        <span>
-          <button
-            className="pagination-button"
-            style={{
-              display: disp ? "inline-block" : "none",
-            }}
-            onClick={() => setcounter(count - 1)}
-          >
-            Prev
-          </button>
-          <button className="current-page">{count}</button>
-          <button
-            className="pagination-button"
-            style={{
-              display: next ? "inline-block" : "none",
-            }}
-            onClick={() => setcounter(count + 1)}
-          >
-            Next
-          </button>
-        </span>
-      </div>
+      {loadingicon ? (
+        <div className="pagination">
+          <span>
+            <button
+              className="pagination-button"
+              style={{
+                display: disp ? "inline-block" : "none",
+              }}
+              onClick={() => setcounter(count - 1)}
+            >
+              Prev
+            </button>
+            <button className="current-page">{count}</button>
+            <button
+              className="pagination-button"
+              style={{
+                display: next ? "inline-block" : "none",
+              }}
+              onClick={() => setcounter(count + 1)}
+            >
+              Next
+            </button>
+          </span>
+        </div>
+      ) : (
+        <div> </div>
+      )}
     </>
   );
 }
