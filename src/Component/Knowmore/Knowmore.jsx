@@ -45,7 +45,13 @@ function Knowmore() {
         <div className="knowbox1">
           <img className="mint" src={mint} alt="mint"></img>
           <hr></hr>
-          <div style={{ fontSize: "20px", textAlign: "center" }}>
+          <div
+            style={{
+              fontSize: "20px",
+              textAlign: "center",
+              fontWeight: "500",
+            }}
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
             ratione, asperiores odit animi enim ea deleniti perspiciatis nulla
             maxime facilis saepe mollitia est nihil consectetur, repudiandae
@@ -55,7 +61,9 @@ function Knowmore() {
         <div className="knowbox2">
           <img className="nirgundhi" src={nirgundhi} alt="nirgundhi"></img>
           <hr></hr>
-          <div style={{ fontSize: "20px", textAlign: "center" }}>
+          <div
+            style={{ fontSize: "20px", textAlign: "center", fontWeight: "500" }}
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
             ratione, asperiores odit animi enim ea deleniti perspiciatis nulla
             maxime facilis saepe mollitia est nihil consectetur, repudiandae
@@ -65,7 +73,9 @@ function Knowmore() {
         <div className="knowbox3">
           <img className="aswagandha" src={aswagandha} alt="aswagandha"></img>
           <hr></hr>
-          <div style={{ fontSize: "20px", textAlign: "center" }}>
+          <div
+            style={{ fontSize: "20px", textAlign: "center", fontWeight: "500" }}
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
             ratione, asperiores odit animi enim ea deleniti perspiciatis nulla
             maxime facilis saepe mollitia est nihil consectetur, repudiandae
@@ -75,7 +85,9 @@ function Knowmore() {
         <div className="knowbox4">
           <img className="gotukola" src={gotkola} alt="gotukola"></img>{" "}
           <hr></hr>
-          <div style={{ fontSize: "20px", textAlign: "center" }}>
+          <div
+            style={{ fontSize: "20px", textAlign: "center", fontWeight: "500" }}
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
             ratione, asperiores odit animi enim ea deleniti perspiciatis nulla
             maxime facilis saepe mollitia est nihil consectetur, repudiandae

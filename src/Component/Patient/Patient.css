@@ -2,7 +2,7 @@
     margin-top:70px;
     height: auto;
     width: auto;
-    background-color:  #eaffdf;
+    background-color:  #f8f8f8;
 }
 .patientimage{
     margin:15px 15px 15px 35px;
@@ -100,7 +100,7 @@
     margin: 20px 20px 2px 20px;
     height: auto;
     width: auto;
-    background-color: #eaffdf ;
+    background-color: #f8f8f8 ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -2,7 +2,7 @@
     margin-top: 70px;
     height: 700px;
     width: auto;
-    background-color: #eaffdf;
+    background-color: #f8f8f8;
   }
   
   .Doctorimage {
@@ -152,7 +152,7 @@
   .doctortrustcontainer{
     height: auto;
     width: auto;
-    background-color: #e0ffcf;
+    background-color: #f8f8f8;
     color:rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
@@ -207,7 +207,7 @@ width: 1200px;
       margin-top: 60px;
       height: 450px;
       width: auto;
-      background-color: #e0ffcf;
+      background-color: #f8f8f8;
     }
   
     .Doctorimage {

@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     height: 92vh;
-    background-image: linear-gradient(to top right, #eaffdf, #efefef);
+    background-image: linear-gradient(to top right, #f8f8f8, #efefef);
   }
   
   .profile-container {

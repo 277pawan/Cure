@@ -3,7 +3,7 @@
     margin-top: 70px;
     height: auto;
     width: 100vw;
-    background-color: #edffed;
+    background-color: #f8f8f8;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
@@ -11,7 +11,7 @@
     align-items: center;
 }
 .shopbox1{
-    background-color: #edffed;
+    background-color: #f8f8f8;
     height: 155px;
     width: auto;
     display: flex;
@@ -29,14 +29,14 @@ margin-top:3px;
 border:1px solid black;
 }
 .shopbox2{
-    background-color:#edffed;
+    background-color:#f8f8f8;
     height: 40px;
     width: auto;
 
     /* margin-top: -18%; */
 }
 .shopbox3{
-    background-color: #edffed;
+    background-color: #f8f8f8;
     height: auto;
     width: auto;
     display: flex;
@@ -47,7 +47,7 @@ border:1px solid black;
     /* margin-top: -35%; */
 }
 .shopbox4{
-    background-color: #edffed;
+    background-color: #f8f8f8;
     height: auto;
     width: 100vw;
     display: flex;
@@ -109,7 +109,7 @@ border:1px solid black;
   .optioncontainer{
     height: auto;
     width:100%;
-    background-color: #edffed;
+    background-color: #f8f8f8;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -138,14 +138,14 @@ border:1px solid black;
     margin-top: 60px;
     height: 1900px;
     width: 100vw;
-    background-color: #edffed;
+    background-color: #f8f8f8;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
     align-items: center;
 }
 .shopbox1{
-    background-color: #edffed;
+    background-color: #f8f8f8;
     height: 70px;
     width: auto;
     display: flex;
@@ -162,13 +162,13 @@ margin-top:3px;
 border:1px solid black;
 }
 .shopbox2{
-    background-color:#edffed;
+    background-color:#f8f8f8;
     height: 40px;
     width: auto;
 
 }
 .shopbox3{
-    background-color: #edffed;
+    background-color: #f8f8f8;
     height: auto;
     width: auto;
     display: flex;
@@ -179,7 +179,7 @@ border:1px solid black;
     margin-top: 1%;
 }
 .shopbox4{
-    background-color: #edffed;
+    background-color: #f8f8f8;
     height: 500px;
     width: 100vw;
     display: flex;

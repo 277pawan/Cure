@@ -1,6 +1,6 @@
 /* Common styles for both mobile and desktop */
 .navbarcontainer {
-  background-color: #eaffdf;
+  background-color: #f8f8f8;
   display: block;
   position: fixed;
   top: 0;
@@ -123,7 +123,7 @@
 }
 @media screen and (max-width:768px) {
   .navbarcontainer {
-    background-color: #eaffdf;
+    background-color: #f8f8f8;
     height: 60px;
     width: 100vw;
   }
@@ -139,7 +139,7 @@
     height: 60px;
     width: 100%;
     box-sizing: border-box;
-    background-color:  #e0ffcf;
+    background-color:  #f8f8f8;
     z-index: 100;
   }
 
