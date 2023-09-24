@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right,#eaffdf,#eaffdf) ;
+    background: linear-gradient(45deg,#f8f8f8,#eaffdf) ;
     z-index: 2;
 }
 .sucess {
