@@ -284,11 +284,10 @@ details{
         font-family: visper libre;
     }
     summary{
-        padding: 20px;
         height: 60px;
         background-color: #d8fed8;
         margin: 0px 10px 0px 0px;
-        width: 93vw;
+        width: 100%;
         font-size: 20px;
         font-family: lolita one;
     }
@@ -302,7 +301,7 @@ details{
     .iframevideo{
         margin: -80px 10px 10px 10px;
         height: 400px;
-        width: 340px;
+        width: 93%;
         position: relative;
         top:0px;
         left:0%
