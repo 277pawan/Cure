@@ -13,7 +13,7 @@
   .box3 {
     flex: 1;
     background: linear-gradient(90deg, rgb(166, 243, 160), green);
-    padding: 20px;
+    padding: 16px;
     margin: 0 10px;
     border-radius: 20px;
     border: 1px inset black;
