@@ -1,117 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lilita+One&family=Lora:ital@1&family=Orbitron:wght@400;700&family=PT+Serif&family=Poppins:wght@100&display=swap');
+/* CSS for Describe Component */
+
 .describecontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-    width:100vw;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #cfd8d2;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.box1,
+.box2,
+.box3 {
+  flex: 1;
+  background: #cfcfcf;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.boxheading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.boxdescript {
+  font-size: 20px;
+  /* font-family: ', sans-serif; */
+  color: #555;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.boxbutton {
+  background-color: #206035;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boxbutton:hover {
+  background-color: #093819;
+}
+
+.hr {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 3px;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
   .box1,
   .box2,
   .box3 {
-    flex: 1;
-    background: linear-gradient(90deg, rgb(166, 243, 160), green);
-    padding: 16px;
-    margin: 0 10px;
-    border-radius: 20px;
-    border: 1px inset black;
-    box-shadow: 3px 3px black;
-  }
-  
-  .boxheading {
-    text-align: left;
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-  }
-  
-  .boxdescript {
-    font-size: 26px;
-    font-family: domine;
-    color: #ffffff;
-    text-align: center;
-    line-height: 1.5;
-  }
-  
-  .boxbutton {
-    background-color: #206035;
-    color: #ffffff;
-    font-size: 20px;
-    width: 150px;
-    font-family: domine;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-    
-.boxbutton:hover {
-    background-color: #093819;
-    color: #ffffff;
-    font-size: 20px;
-    font-family: domine;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-  .in-view{
-    animation: intersect 1s ease-in-out;
-  }
-  @keyframes intersect {
-    from{
-      transform: translateY(30%);
-      opacity: 0;
-    }
-    to{
-      transform: translateY(0%);
-      opacity: 1;
-    }
-    
-  }
-  .hr{
+    margin: 20px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    height: 3px;
-    border-radius: 2px;
-    margin-top: 2%;
   }
-  @media screen and (max-width: 768px) {
-    .describecontainer {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .box1,
-    .box2,
-    .box3 {
-      width: 90%;
-      margin: 10px 0;
-    }
-    .boxbutton {
-      background-color: #206035;
-      color: #ffffff;
-      font-size: 20px;
-      font-family: domine;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-  }
-      
-  .boxbutton:hover {
-      background-color: #093819;
-      color: #ffffff;
-      font-size: 20px;
-      font-family: domine;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
 
+  .boxbutton {
+    font-size: 14px;
   }
+}
+
+/* Additional CSS for Responsive Font Sizes */
+@media screen and (max-width: 480px) {
+  .boxheading {
+    font-size: 20px;
   }
-  
+
+  .boxdescript {
+    font-size: 18px;
+  }
+
+  .boxbutton {
+    font-size: 14px;
+  }
+}

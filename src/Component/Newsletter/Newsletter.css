@@ -1,7 +1,8 @@
 .newslettercontainer {
     height: auto;
     width: 100%;
-    background: linear-gradient(90deg, #ade5ab, #097809);
+    /* background: linear-gradient(90deg, #ade5ab, #097809); */
+    background-color: #cfd8d2;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -14,7 +15,7 @@
     margin: 10px;
     padding: 20px;
     width: 600px;
-    background-color: #e0ffdf;
+    background-color: #cfcfcf;
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   }
@@ -45,7 +46,7 @@
     font-family: 'Arial', sans-serif;
     border-radius: 5px;
     color: black;
-    background-color: #e0ffdf;
+    background-color: #cfcfcf;
     border: 2px solid darkgreen;
     margin-bottom: 10px;
     padding: 10px;
@@ -74,7 +75,7 @@
     border-radius: 5px;
     height: 70px;
     color: black;
-    background-color: #e0ffdf;
+    background-color: #cfcfcf;
     font-size: 24px;
     cursor: pointer;
   }
@@ -84,5 +85,7 @@
     background-color: transparent;
     border-radius: 20px;
     border:2px solid darkgreen;
+    width: 200px;
+    cursor: pointer;
   }
   

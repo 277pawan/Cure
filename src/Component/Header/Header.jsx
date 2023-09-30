@@ -11,7 +11,10 @@ function Header() {
         loop
         muted
       ></video>{" "}
-      <div className="video1text"> Health Without Restriction.</div>
+      <div className="video1text text-focus-in">
+        {" "}
+        Health Without Restriction.
+      </div>
     </div>
   );
 }
