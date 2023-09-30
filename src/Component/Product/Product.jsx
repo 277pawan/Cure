@@ -67,7 +67,10 @@ function Product() {
             style={{
               fontFamily: "vesper libre",
               fontSize: "22px",
-              padding: "2px",
+              padding: "10px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             Our products are GMP certified and tested. Click to the shop to go
@@ -90,7 +93,10 @@ function Product() {
             style={{
               fontFamily: "vesper libre",
               fontSize: "22px",
-              padding: "2px",
+              padding: "10px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             Customer satisfaction is our top priority. And this is noticeable.
@@ -114,7 +120,10 @@ function Product() {
             style={{
               fontFamily: "vesper libre",
               fontSize: "22px",
-              padding: "2px",
+              padding: "10px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             These details include product features, descriptions, dimensions,

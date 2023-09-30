@@ -12,10 +12,12 @@
   .box2,
   .box3 {
     flex: 1;
-    background-color: #83c673;
+    background: linear-gradient(90deg, rgb(166, 243, 160), green);
     padding: 20px;
     margin: 0 10px;
-    border-radius: 5px;
+    border-radius: 20px;
+    border: 1px inset black;
+    box-shadow: 3px 3px black;
   }
   
   .boxheading {
