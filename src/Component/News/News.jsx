@@ -15,7 +15,6 @@ function News() {
         const response = await fetch("https://dummyjson.com/products");
         const data = await response.json();
         setdata(data.products);
-        console.log(data);
         setLoading(false);
         setloadingicon(true);
       } catch (err) {

@@ -48,7 +48,6 @@ function Navbar() {
     setProfileBoxVisible(!profileBoxVisible);
     navigatelogin("/Login");
   };
-
   return (
     <div className="navbarcontainer">
       <ul className="mobileul">

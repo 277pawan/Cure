@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Header.css";
 import headerLeafvideo from "../../Assets/Headerleaf.mp4";
 function Header() {

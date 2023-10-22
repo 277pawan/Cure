@@ -12,7 +12,6 @@ function Cannabis() {
       (entries) => {
         entries.forEach((entry) => {
           setintersection(entry.isIntersecting);
-          console.log("yellow");
         });
       },
       {
