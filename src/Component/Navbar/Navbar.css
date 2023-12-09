@@ -1,20 +1,19 @@
 /* Common styles for both mobile and desktop */
 .navbarcontainer {
-  background-color: transparent;
+  background-color: whitesmoke;
   display: block;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   z-index: 1000;
-  color: white;
 }
 
 .windowul {
   height:60px;
   width: 100%;
   overflow: hidden;
-  color: white;
+  color: black;
 }
 
 .cure {
@@ -22,7 +21,7 @@
   text-indent: 0px;
   float: left;
   padding: 10px;
-  color: #ffffff;
+  color: green;
   font-family: fantasy;
   font-size: 45px;
 }
@@ -37,7 +36,7 @@
   font-family: vesper libre;
   position: relative;
   overflow: hidden;
-  color: white;
+  color: black;
 }
 #profileBox {
   position: absolute;
