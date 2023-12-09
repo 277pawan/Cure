@@ -58,7 +58,7 @@
   .pbox5,
   .pbox6 {
       flex: 1;
-    background-color: #cfd8d2;
+    background-color: lightblue;
     padding: 20px;
     margin: 0 10px;
     border:2px inset black;

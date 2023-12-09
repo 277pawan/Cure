@@ -5,6 +5,8 @@ import hamsopen from "../../Assets/Hamburg.png";
 import hamsclose from "../../Assets/hamburgclose.png";
 import { Link, useNavigate } from "react-router-dom";
 import Usestore from "../Usestore";
+import { gsap, Power2 } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 function Navbar() {
   const [hamimagevisible, sethamimagevisible] = useState(true);
   const [profileBoxVisible, setProfileBoxVisible] = useState(false);
@@ -193,7 +195,7 @@ function Navbar() {
         </li>
         <Link to="/Contact">
           <li
-            style={{ color: "black", textDecoration: "none" }}
+            style={{ color: "white", textDecoration: "none" }}
             className="windowli"
           >
             Contact
@@ -201,7 +203,7 @@ function Navbar() {
         </Link>
         <Link to="/Knowmore">
           <li
-            style={{ color: "black", textDecoration: "none" }}
+            style={{ color: "white", textDecoration: "none" }}
             className="windowli"
           >
             Insights
@@ -209,7 +211,7 @@ function Navbar() {
         </Link>
         <Link to="/Shop">
           <li
-            style={{ color: "black", textDecoration: "none" }}
+            style={{ color: "white", textDecoration: "none" }}
             className="windowli"
           >
             Products
@@ -217,7 +219,7 @@ function Navbar() {
         </Link>
         <Link to="/">
           {" "}
-          <li style={{ color: "black" }} className="windowli">
+          <li style={{ color: "white" }} className="windowli">
             Home
           </li>
         </Link>
