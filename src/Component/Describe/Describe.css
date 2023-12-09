@@ -7,7 +7,7 @@
   align-items: center;
   flex-direction: row;
   padding: 20px;
-  background-color: #cfd8d2;
+  background-color: lightcyan;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
@@ -17,7 +17,7 @@
 .box2,
 .box3 {
   flex: 1;
-  background: #cfcfcf;
+  background:lightblue;
   border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -66,7 +66,7 @@
 
 .hr {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   height: 3px;
   border-radius: 2px;
   margin-top: 20px;

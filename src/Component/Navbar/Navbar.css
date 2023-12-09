@@ -1,6 +1,6 @@
 /* Common styles for both mobile and desktop */
 .navbarcontainer {
-  background-color: #cfd8d2;
+  background-color: lightcyan;
   display: block;
   position: fixed;
   top: 0;
@@ -10,7 +10,7 @@
 }
 
 .windowul {
-  height:70px;
+  height:60px;
   width: 100%;
   overflow: hidden;
 }
@@ -30,7 +30,7 @@
   float: right;
   text-indent: 15px;
   padding: 20px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   font-family: vesper libre;
   position: relative;
@@ -40,7 +40,7 @@
   position: absolute;
   top: 60px;
   right: 0vw;
-  background-color:whitesmoke;
+  background-color:lightcyan;
   padding: 10px 20px 10px 0px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -123,8 +123,8 @@
 }
 @media screen and (max-width:768px) {
   .navbarcontainer {
-    background-color: #f8f8f8;
-    height: 60px;
+    background-color:lightcyan;
+    height: 58px;
     width: 100vw;
   }
 
@@ -187,7 +187,7 @@
   }
 
   #hamsburgbox {
-    background-color:  #e0ffcf;
+    background-color:  lightcyan;
     position: absolute;
     left: -620%;
     top: 100%;
@@ -227,7 +227,7 @@
     position: absolute;
     top: 60px;
     right: 0px;
-    background-color: #edffed;
+    background-color: lightcyan;
     padding: 5px 20px 10px 0px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
