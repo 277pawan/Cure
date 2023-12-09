@@ -9,6 +9,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    filter: brightness(0.6);
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -20,7 +21,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 120px;
+    font-size: 110px;
     font-family:Lobster;
     text-align: center;
   }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Navbar.css";
 import verstaile from "../../Assets/verstaileimage.png";
 import hamsopen from "../../Assets/Hamburg.png";
@@ -6,8 +6,9 @@ import hamsclose from "../../Assets/hamburgclose.png";
 import { Link, useNavigate } from "react-router-dom";
 import Usestore from "../Usestore";
 import { gsap, Power2 } from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger, CSSRulePlugin } from "gsap/all";
 function Navbar() {
+  const navbarcontainerref = useRef(null);
   const [hamimagevisible, sethamimagevisible] = useState(true);
   const [profileBoxVisible, setProfileBoxVisible] = useState(false);
   const userEmail = Usestore((state) => state.email);
@@ -18,6 +19,24 @@ function Navbar() {
   const navigateprofile = useNavigate();
   const navigatelogin = useNavigate();
   const navigate = useNavigate();
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(CSSRulePlugin);
+    const t1 = new gsap.timeline({
+      duration: 0.2,
+      scrollTrigger: {
+        trigger: navbarcontainerref.current,
+        start: "top -20%",
+        toggleActions: "play",
+      },
+    });
+
+    t1.to(navbarcontainerref.current, {
+      duration: 0.7,
+      css: { "background-color": "lightcyan" },
+      ease: Power2.easeInOut,
+    });
+  });
   function hamburghandle() {
     sethamimagevisible(!hamimagevisible);
     navigate({
@@ -51,7 +70,7 @@ function Navbar() {
     navigatelogin("/Login");
   };
   return (
-    <div className="navbarcontainer">
+    <div ref={navbarcontainerref} className="navbarcontainer">
       <ul className="mobileul">
         <li className="cure">Cure</li>
         <li style={{ listStyle: "none" }}>
@@ -194,34 +213,17 @@ function Navbar() {
           )}
         </li>
         <Link to="/Contact">
-          <li
-            style={{ color: "white", textDecoration: "none" }}
-            className="windowli"
-          >
-            Contact
-          </li>
+          <li className="windowli">Contact</li>
         </Link>
         <Link to="/Knowmore">
-          <li
-            style={{ color: "white", textDecoration: "none" }}
-            className="windowli"
-          >
-            Insights
-          </li>
+          <li className="windowli">Insights</li>
         </Link>
         <Link to="/Shop">
-          <li
-            style={{ color: "white", textDecoration: "none" }}
-            className="windowli"
-          >
-            Products
-          </li>
+          <li className="windowli">Products</li>
         </Link>
         <Link to="/">
           {" "}
-          <li style={{ color: "white" }} className="windowli">
-            Home
-          </li>
+          <li className="windowli">Home</li>
         </Link>
       </ul>
     </div>
