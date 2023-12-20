@@ -52,6 +52,7 @@ function Pharma() {
                   fontFamily: "domine",
                   fontSize: "25px",
                   fontWeight: "600",
+                  color: "black",
                 }}
               >
                 {" "}
@@ -62,6 +63,8 @@ function Pharma() {
                   fontFamily: "vesper libre",
                   fontSize: "22px",
                   padding: "2px",
+                  color: "black",
+                  textAlign: "center",
                 }}
               >
                 We give you transparent information about where your medical
@@ -81,6 +84,7 @@ function Pharma() {
                   fontFamily: "domine",
                   fontSize: "25px",
                   fontWeight: "600",
+                  color: "black",
                 }}
               >
                 {" "}
@@ -91,6 +95,8 @@ function Pharma() {
                   fontFamily: "vesper libre",
                   fontSize: "22px",
                   padding: "2px",
+                  color: "black",
+                  textAlign: "center",
                 }}
               >
                 In order to make billing clearer, we have provided you with
@@ -110,6 +116,7 @@ function Pharma() {
                   fontFamily: "domine",
                   fontSize: "25px",
                   fontWeight: "600",
+                  color: "black",
                 }}
               >
                 ... and even more information
@@ -119,6 +126,8 @@ function Pharma() {
                   fontFamily: "vesper libre",
                   fontSize: "22px",
                   padding: "2px",
+                  color: "black",
+                  textAlign: "center",
                 }}
               >
                 These details include product features, descriptions,

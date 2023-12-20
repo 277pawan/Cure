@@ -93,23 +93,8 @@ function Login() {
             <span className="orline"></span>
           </div>
           <button onClick={googlehandle} className="googlelogin">
-            <span
-              style={{
-                fontSize: "35px",
-                fontFamily: "arial",
-                color: "white",
-                fontWeight: "800",
-                position: "relative",
-                height: "50px",
-                width: "50px",
-                backgroundColor: "darkgreen",
-                borderRadius: "40px",
-                display: "inline-block",
-              }}
-            >
-              G
-            </span>
-            &nbsp;google
+            <span>G</span>
+            Sign with google
           </button>
           <div style={{ marginTop: "5%", fontSize: "20px", marginLeft: "-1%" }}>
             Don't have an account?{" "}

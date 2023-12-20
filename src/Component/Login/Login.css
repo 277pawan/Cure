@@ -1,6 +1,6 @@
 .logincontainer{
     margin-top: 70px;
-    height: 95vh;
+    height: 93vh;
     width: 100%;
     background-color: green;
     display: flex;
@@ -85,10 +85,18 @@ outline: none;
 .googlelogin:hover{
     background-color: green;
 }
+.googlelogin span{
+    background-color: darkgreen;
+    padding: 0px 10px 0px 10px;
+    margin: 6px;
+    font-size: 40px;
+    border-radius: 50%;
+    font-weight: 600;
+}
 @media screen and (max-width:768px) {
     .logincontainer{
         margin-top: 42px;
-        height: 100vh;
+        height: 96vh;
         width: 100%;
         background-color: green;
         display: flex;

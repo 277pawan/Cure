@@ -46,6 +46,7 @@
   color: #555;
   line-height: 1.5;
   margin: 20px 0;
+  overflow-x: hidden;
 }
 
 .boxbutton {
@@ -81,7 +82,8 @@
   }
 
   .boxbutton {
-    font-size: 14px;
+    color: white;
+    font-size: 16px;
   }
 }
 
@@ -96,6 +98,7 @@
   }
 
   .boxbutton {
-    font-size: 14px;
+    color: white;
+    font-size: 16px;
   }
 }

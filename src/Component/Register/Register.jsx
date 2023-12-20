@@ -143,11 +143,10 @@ function Register() {
                 placeholder="OTP..."
               ></input>
             </span>
-            <span>
-              <button onClick={generateotp} className="otp">
-                Generate OTP
-              </button>
-            </span>
+          </div>
+          <div className="otp">
+            {" "}
+            <button onClick={generateotp}>Generate OTP</button>
           </div>
           <button onClick={handlesubmit} className="signup">
             Signin
