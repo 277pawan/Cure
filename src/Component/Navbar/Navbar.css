@@ -216,12 +216,10 @@
     font-family: vesper libre;
     font-weight: 700;
     list-style-type: none;
-    background-color:  #e0ffcf;
     display: flex;
     opacity: 1;
     margin-left: 87%;
     flex-direction: row;
-    padding: 0px;
     justify-content: center;
     margin-top: 40px;
   }
