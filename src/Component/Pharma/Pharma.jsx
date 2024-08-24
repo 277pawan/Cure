@@ -5,7 +5,7 @@ import image10 from "../../Assets/image10.png";
 import image11 from "../../Assets/image11.png";
 import image2 from "../../Assets/image2.png";
 import firstform from "../../Assets/firstform.gif";
-import secondform from "../../Assets/ConfirmForm.png";
+import secondform from "../../Assets/confirm.png";
 import download from "../../Assets/download.png";
 import information from "../../Assets/information.png";
 import Footer from "../Footer/Footer";
