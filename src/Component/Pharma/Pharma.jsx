@@ -4,6 +4,8 @@ import image18 from "../../Assets/image18.png";
 import image10 from "../../Assets/image10.png";
 import image11 from "../../Assets/image11.png";
 import image2 from "../../Assets/image2.png";
+import firstform from "../../Assets/firstform.gif";
+import secondform from "../../Assets/ConfirmForm.png";
 import download from "../../Assets/download.png";
 import information from "../../Assets/information.png";
 import Footer from "../Footer/Footer";
@@ -139,11 +141,11 @@ function Pharma() {
         </div>
         <div className="cannabiscontainer">
           <div className="cannbox1">
-            <img className="image10" src={image10} alt="cannimage1"></img>
+            <img className="image10" src={firstform} alt="cannimage1"></img>
           </div>
           <div className="cannbox2">
             {" "}
-            <img className="image11" src={image11} alt="cannimage1"></img>
+            <img className="image11" src={secondform} alt="cannimage1"></img>
           </div>
           <div className="cannbox3">
             <div className="cannheading">
