@@ -10,6 +10,12 @@
 
     margin-bottom: 10px;
 }
+
+.videoClass{
+display:hidden;
+    visibility:none;
+
+}
   .image10{
         height: 550px;
         width: 350px;
