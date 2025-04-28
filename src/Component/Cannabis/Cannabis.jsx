@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Cannabis.css";
 import image10 from "../../Assets/image10.png";
 import image11 from "../../Assets/image11.png";
-import FormVideo from "../../Assets/Screencast from 2025-04-28 12-04-26.webm";
+import FormVideo from "../../Assets/ezgif.com-video-to-gif-converter (Copy).gif";
 import { Link } from "react-router-dom";
 
 function Cannabis() {
