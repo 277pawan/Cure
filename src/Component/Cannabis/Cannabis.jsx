@@ -52,7 +52,7 @@ function Cannabis() {
           of the therapy of various diseases As a wholesaler of medical
           cannabis, we would like to make our contribution to ensuring safe and
           sustainable therapy.
-        <video className="videoClass" src={FormVideo} width="100%"></video>
+        <img className="videoClass" src={FormVideo} width="100%"/>
         </div>
       <Link to="/Shop">
           {" "}
