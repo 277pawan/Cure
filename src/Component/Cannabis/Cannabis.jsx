@@ -52,8 +52,8 @@ function Cannabis() {
           of the therapy of various diseases As a wholesaler of medical
           cannabis, we would like to make our contribution to ensuring safe and
           sustainable therapy.
-        </div>
         <video className="videoClass" src={FormVideo} width="100%"></video>
+        </div>
       <Link to="/Shop">
           {" "}
           <button className="cannbutton">To The Shop</button>
