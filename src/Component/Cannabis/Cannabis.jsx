@@ -53,7 +53,7 @@ function Cannabis() {
           cannabis, we would like to make our contribution to ensuring safe and
           sustainable therapy.
         </div>
-        <video className="videoClass" src={formVideo} width="100%"></video>
+        <video className="videoClass" src={FormVideo} width="100%"></video>
       <Link to="/Shop">
           {" "}
           <button className="cannbutton">To The Shop</button>
